@@ -1,0 +1,26 @@
+:root {
+	--primary: #555;
+	--primary-important: #333;
+	--primary-night-mode-important: #ddd;
+	--primary-night-mode: #fff;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+	font-family: 'Ubuntu Mono', monospace;
+	color: var(--primary);
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--primary-important)
+}
