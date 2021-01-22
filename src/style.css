@@ -3,6 +3,8 @@
 	--primary-important: #333;
 	--primary-night-mode-important: #ddd;
 	--primary-night-mode: #fff;
+	--standard-unit: 20px;
+	--page-padding: 30px;
 }
 
 *, *::before, *::after {
@@ -23,4 +25,31 @@ h4,
 h5,
 h6 {
 	color: var(--primary-important)
+}
+
+/* HORIZONTAL-SCROLL CONTAINER */
+div.horizontal-scroll-container {
+	padding: var(--standard-unit);
+	height: auto;
+	width: 100vw;
+	max-width: 100%;
+	display: flex;
+	flex-direction: row;
+	overflow-x:scroll;
+	white-space: nowrap;
+}
+
+div.horizontal-scroll-container > article {
+	margin-right: var(--standard-unit);
+}
+
+div.horizontal-scroll-container > article:last-child {
+	margin-right: 0;
+}
+
+div.horizontal-scroll-container > article:first-child::before,
+div.horizontal-scroll-container > article:last-child::after {
+	content: '';
+	margin-left: solid var(--standard-unit) transparent;
+
 }
