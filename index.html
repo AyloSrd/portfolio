@@ -13,7 +13,9 @@
 		<link rel="stylesheet" href="./src/assets/fonts/fonts.css">
 		<link rel="stylesheet" href="./src/style.css">
 		<link rel="stylesheet" href="./src/style.mobile.css">
-		<script src="./src/script.js" type='module' defer></script>
+		<script src="./src/assets/data/data.js" type='module' defer></script>
+		<script src="./src/modules/templates/Article.js" type='module' defer></script>
+		<script src="./src/modules/templates/ArticlesContainer.js" type='module' defer></script>
 		<script src="./src/script.js" type='module' defer></script>
 	</head>
 	<body>
@@ -21,11 +23,41 @@
 			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
 		<nav></nav>
+		<header>
+			<h1>Full-stack JavaScript Developer</h1>
+		</header>
 		<main>
-			<h1>Test</h1>
-			<p>Paragraph</p>
+			<section>
+				<h2>Portfolio</h2>
+				<div 
+					id="portfolio-scroll"
+					class="horizontal-scroll-container"
+				></div>
+			</section>
+			<section>
+				<h2>Work Experiences</h2>
+				<div 
+					id="work-scroll"
+					class="horizontal-scroll-container"
+				></div>
+			</section>
+			<section>
+				<h2>Education</h2>
+				<div 
+					id="education-scroll"
+					class="horizontal-scroll-container"
+				></div>
+			</section>
+			<section>
+				<h2>Intrests & Activities</h2>
+				<div 
+					id="intrests-scroll"
+					class="horizontal-scroll-container"
+				></div>
+			</section>
 		</main>
-		<footer></footer>
+		<footer>
+		</footer>
 		<script src="" async defer></script>
 	</body>
 </html>

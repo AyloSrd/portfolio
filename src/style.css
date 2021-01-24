@@ -3,6 +3,7 @@
 	--primary-important: #333;
 	--primary-night-mode-important: #ddd;
 	--primary-night-mode: #fff;
+	--secondary: #e74b4b;
 	--standard-unit: 20px;
 	--page-padding: 30px;
 }
@@ -25,6 +26,12 @@ h4,
 h5,
 h6 {
 	color: var(--primary-important)
+}
+
+section {
+	width: 100vw;
+	max-width: 100%;
+	height: auto;
 }
 
 /* HORIZONTAL-SCROLL CONTAINER */
