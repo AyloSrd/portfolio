@@ -48,15 +48,23 @@ div.horizontal-scroll-container {
 
 div.horizontal-scroll-container > article {
 	margin-right: var(--standard-unit);
+	display: grid;
+	grid-template-columns: auto auto;
 }
 
 div.horizontal-scroll-container > article:last-child {
 	margin-right: 0;
+	border-right: solid var(--standard-unit) transparent;
 }
 
-div.horizontal-scroll-container > article:first-child::before,
-div.horizontal-scroll-container > article:last-child::after {
-	content: '';
-	margin-left: solid var(--standard-unit) transparent;
-
+div.horizontal-scroll-container > article > div.img-container {
+	height: 100px;
+	width: 100px;
 }
+
+div.horizontal-scroll-container > article > div.img-container >  img {
+	height: 100%;
+	width: auto;
+}
+
+
