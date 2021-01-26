@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="./src/assets/fonts/fonts.css">
 		<link rel="stylesheet" href="./src/style.css">
 		<link rel="stylesheet" href="./src/style.mobile.css">
+		<link rel="stylesheet" href="./src/input.css">
 		<script src="./src/assets/data/data.js" type='module' defer></script>
 		<script src="./src/modules/templates/Article.js" type='module' defer></script>
 		<script src="./src/modules/templates/ArticlesContainer.js" type='module' defer></script>
@@ -29,6 +30,14 @@
 		<main>
 			<section>
 				<h2>Portfolio</h2>
+				<input 
+					type="range" 
+					id="dark-mode-btn" 
+					name="dark-mode-btn" 
+					min="0" 
+					max="1"
+					value="0"
+				>
 				<div 
 					id="portfolio-scroll"
 					class="horizontal-scroll-container"
@@ -54,6 +63,18 @@
 					id="intrests-scroll"
 					class="horizontal-scroll-container"
 				></div>
+			</section>
+			<section 
+				id="modal"
+				style="display:none"
+			>
+				<div class="modal-container">
+					<div>
+						<div>
+							<img src="" alt="">
+						</div>
+					</div>
+				</div>
 			</section>
 		</main>
 		<footer>

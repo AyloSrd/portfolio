@@ -1,11 +1,12 @@
 :root {
 	--primary: #555;
 	--primary-important: #333;
-	--primary-night-mode-important: #ddd;
-	--primary-night-mode: #fff;
+	--bkg: #fff;
+	--bkg-important: #fee;
 	--secondary: #e74b4b;
-	--standard-unit: 20px;
-	--page-padding: 30px;
+	--standard-unit: 2.5rem;
+	--small-unit: 1rem;
+	--large-unit: 5rem;
 }
 
 *, *::before, *::after {
@@ -17,6 +18,7 @@
 body {
 	padding: 0;
 	margin: 0;
+	background-color: var(--bkg);
 }
 
 h1,
@@ -28,6 +30,11 @@ h6 {
 	color: var(--primary-important)
 }
 
+input[type=range] {
+	width: 50px;
+	color: var(--secondary);
+}
+
 section {
 	width: 100vw;
 	max-width: 100%;
@@ -36,7 +43,7 @@ section {
 
 /* HORIZONTAL-SCROLL CONTAINER */
 div.horizontal-scroll-container {
-	padding: var(--standard-unit);
+	padding: var(--standard-unit) 0;
 	height: auto;
 	width: 100vw;
 	max-width: 100%;
@@ -50,6 +57,7 @@ div.horizontal-scroll-container > article {
 	margin-right: var(--standard-unit);
 	display: grid;
 	grid-template-columns: auto auto;
+	background-color: var(--bkg-important);
 }
 
 div.horizontal-scroll-container > article:last-child {
