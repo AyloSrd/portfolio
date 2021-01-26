@@ -7,21 +7,24 @@ const MODE_VARIABLES = {
 		['--primary-important', '#fff'],
 		['--primary', '#ddd'],
 		['--bkg', '#333'],
-		['--bkg-important', '#555']
+		['--bkg-important', '#555'],
+		['--bkg-dark-mode-toggler', '#a74949']
 
 	],
 	light: [
 		['--primary-important', '#333'],
 		['--primary', '#555'],
 		['--bkg', '#fff'],
-		['--bkg-important', '#fee']
+		['--bkg-important', '#fee'],
+		['--bkg-dark-mode-toggler', '#fee']
 	]
 }
 
 
 const changeMode = e => {
-	const mode = e.target.value === '0' ? 'light' : 'dark'
-	console.log(MODE_VARIABLES[mode])
+	const mode = e.target.value === '0' 
+		? 'light' 
+		: 'dark'
 	MODE_VARIABLES[mode].forEach(cssVar => {
 		document.documentElement.style.setProperty(...cssVar)
 	})
