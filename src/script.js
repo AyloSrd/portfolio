@@ -1,5 +1,4 @@
 import { portfolio } from './assets/data/data.js'
-import Article  from './modules/templates/Article.js'
 import ArticlesContainer  from './modules/templates/ArticlesContainer.js'
 
 const MODE_VARIABLES = {
@@ -20,6 +19,7 @@ const MODE_VARIABLES = {
 	]
 }
 
+const Modal = document.getElementById('modal')
 
 const changeMode = e => {
 	const mode = e.target.value === '0' 
@@ -30,7 +30,14 @@ const changeMode = e => {
 	})
 }
 
+const handleOpenModal = () => Modal.style.display = 'grid'
+
+const handleCloseModal = () => Modal.style.display = 'none'
+
+Modal.addEventListener('click', handleCloseModal)
+
 document.getElementById('dark-mode-btn').addEventListener('change', e => changeMode(e))
 
-
 document.getElementById('portfolio-scroll').innerHTML = ArticlesContainer(portfolio)
+
+document.querySelectorAll('div.horizontal-scroll-container article').forEach(article => article.addEventListener('click', handleOpenModal))

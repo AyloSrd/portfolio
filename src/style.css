@@ -31,15 +31,18 @@ h6 {
 	color: var(--primary-important)
 }
 
-input[type=range] {
-	width: 50px;
-	color: var(--secondary);
+p {
+	color: var(--primary)
 }
 
 section {
 	width: 100vw;
 	max-width: 100%;
 	height: auto;
+}
+
+.italic {
+	font-style: italic;
 }
 
 /* HORIZONTAL-SCROLL CONTAINER */
