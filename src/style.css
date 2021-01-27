@@ -72,7 +72,7 @@ div.horizontal-scroll-container > article {
 
 div.horizontal-scroll-container > article:last-child {
 	margin-right: 0;
-	border-right: solid var(--standard-unit) transparent;
+	border-right: solid var(--standard-unit) var(--bkg);
 }
 
 div.horizontal-scroll-container > article > div.img-container {
