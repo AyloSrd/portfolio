@@ -2,10 +2,13 @@ import { portfolio } from './assets/data/data.js'
 import { 
 	changeMode,
 	handleOpenModal, 
-	handleCloseModal 
+	handleCloseModal,
+	handleScrollLeft,
+	handleScrollRight 
 } from './modules/helpers/helpers.js'
 import ArticlesContainer  from './modules/templates/ArticlesContainer.js'
 
+/* GENERAL CONSTANTS */
 const MODE_VARIABLES = {
 	dark:  [
 		['--primary-important', '#fff'],
@@ -24,12 +27,17 @@ const MODE_VARIABLES = {
 	]
 }
 
+/* PAGE ELEMENTS */
 const Modal = document.getElementById('modal')
+const PortfolioScroll = document.getElementById('portfolio-scroll')
 
+
+/* EVENTS */
 Modal.addEventListener('click', () => handleCloseModal(Modal))
+PortfolioScroll.innerHTML = ArticlesContainer(portfolio)
+document.getElementById('dark-mode-btn').addEventListener('change', e => changeMode({e, MODE_VARIABLES}))//dark-mode
+document.querySelectorAll('div.horizontal-scroll-container article').forEach(article => article.addEventListener('click', () => handleOpenModal(Modal)))//click on article to open modal
+document.querySelectorAll('button.scroll-left').forEach(btn => btn.addEventListener('click', e => handleScrollLeft(e)))//scroll-left buttons
+document.querySelectorAll('button.scroll-right').forEach(btn => btn.addEventListener('click', e => handleScrollRight(e)))//scroll-right buttons
 
-document.getElementById('dark-mode-btn').addEventListener('change', e => changeMode(e, MODE_VARIABLES))
 
-document.getElementById('portfolio-scroll').innerHTML = ArticlesContainer(portfolio)
-
-document.querySelectorAll('div.horizontal-scroll-container article').forEach(article => article.addEventListener('click', () => handleOpenModal(Modal)))
