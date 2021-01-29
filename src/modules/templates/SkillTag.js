@@ -1,4 +1,4 @@
-const SkillTag = { skill, researchedSkill } => {
+const SkillTag = ({ skill, researchedSkill }) => {
 	const template = `
 	<span
 		class="skill-tag${ 
