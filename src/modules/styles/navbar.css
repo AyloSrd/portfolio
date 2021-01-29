@@ -1,0 +1,19 @@
+nav {
+	width: 100vw;
+	height:auto;
+	max-width: 100%;
+	position: sticky;
+	top: 0;
+	left: 0;
+	display: grid;
+	background-color: var(--bkg);
+}
+
+nav > div.logo-container-nav {
+	height: var(--standard-unit);
+}
+
+nav > div.logo-container-nav > img {
+	height: 100%;
+	width: auto;
+}

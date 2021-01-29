@@ -1,0 +1,40 @@
+div.horizontal-scroll-container {
+	padding: var(--standard-unit) 0;
+	height: auto;
+	width: 100vw;
+	max-width: 100%;
+	display: flex;
+	flex-direction: row;
+	overflow-x:scroll;
+	white-space: nowrap;
+	scroll-behavior: smooth;
+	-ms-overflow-style: none;  /* IE and Edge */
+  	scrollbar-width: none;  /* Firefox */
+}
+
+div.horizontal-scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+div.horizontal-scroll-container > article {
+	margin-right: var(--standard-unit);
+	display: grid;
+	grid-template-columns: auto auto;
+	background-color: var(--bkg-important);
+	cursor: pointer;
+}
+
+div.horizontal-scroll-container > article:last-child {
+	margin-right: 0;
+	border-right: solid var(--standard-unit) var(--bkg);
+}
+
+div.horizontal-scroll-container > article > div.img-container {
+	height: 100px;
+	width: 100px;
+}
+
+div.horizontal-scroll-container > article > div.img-container >  img {
+	height: 100%;
+	width: auto;
+}

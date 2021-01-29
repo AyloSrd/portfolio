@@ -7,12 +7,16 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>portfolio</title>
+		<title>Qompetences</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="src/assets/imgs/favicon-light-mode.ico" type="image/x-icon">
+		<link rel="icon" href="src/assets/imgs/favicon-light-mode.ico" type="image/x-icon">
 		<link rel="stylesheet" href="./src/assets/fonts/fonts.css">
 		<link rel="stylesheet" href="./src/style.css">
 		<link rel="stylesheet" href="./src/style.mobile.css">
+		<link rel="stylesheet" href="./src/modules/styles/navbar.css">
+		<link rel="stylesheet" href="./src/modules/styles/horizontalScrollDiv.css">
 		<link rel="stylesheet" href="./src/modules/styles/input.css">
 		<link rel="stylesheet" href="./src/modules/styles/modal.css">
 		<script src="./src/assets/data/data.js" type='module' defer></script>
@@ -25,7 +29,25 @@
 		<!--[if lt IE 7]>
 			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
-		<nav></nav>
+		<nav>
+			<div class="logo-container-nav">
+				<img src="/src/assets/imgs/logo.png" alt="Qompetences logo">
+			</div>
+			<div id="search-zone">
+				<form
+					id="search-form"
+				>
+					<input 
+						type="text" 
+						name="search-input" 
+						id="search-input"
+					>
+				</form>
+			</div>
+			<div id="skills-zone">
+
+			</div>
+		</nav>
 		<header>
 			<h1>Full-stack JavaScript Developer</h1>
 			<input 

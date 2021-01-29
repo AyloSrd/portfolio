@@ -5,6 +5,10 @@ export const changeMode = ({e, MODE_VARIABLES}) => {
 	MODE_VARIABLES[mode].forEach(cssVar => {
 		document.documentElement.style.setProperty(...cssVar)
 	})
+
+	document.querySelector('link[rel="shortcut icon"]').href = `src/assets/imgs/favicon-${mode}-mode.ico`;
+	document.querySelector('link[rel="icon"]').href = `src/assets/imgs/favicon-${mode}-mode.ico`;
+
 }
 
 export const handleOpenModal = Modal => Modal.style.display = 'grid'

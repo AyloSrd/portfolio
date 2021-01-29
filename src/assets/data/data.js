@@ -1,3 +1,9 @@
+export const skills = {
+	categories: ['Computer Skills', 'Business Skills', 'Soft Skills'],
+	computerSkills: ['javascript', 'html', 'css', 'react', 'svelte', 'git', 'github', 'heroku', 'vercel', 'aws', 'docker', 'node.js', 'deno', 'mongoDB', 'NoSQL', 'socket.io', 'peerjs', 'webRTC'],
+	businessSkills: ['sales', 'marketing']
+}
+
 export const portfolio = [
 	{
 		image: {
