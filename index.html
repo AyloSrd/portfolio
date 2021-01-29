@@ -21,6 +21,9 @@
 		<link rel="stylesheet" href="./src/modules/styles/modal.css">
 		<script src="./src/assets/data/data.js" type='module' defer></script>
 		<script src="src/modules/helpers/helpers.js" type="module" defer></script>
+		<script src="./src/modules/templates/SkillTag.js" type='module' defer></script>
+		<script src="./src/modules/templates/SkillTagsList.js" type='module' defer></script>
+		<script src="./src/modules/templates/AllSkills.js" type='module' defer></script>
 		<script src="./src/modules/templates/Article.js" type='module' defer></script>
 		<script src="./src/modules/templates/ArticlesContainer.js" type='module' defer></script>
 		<script src="./src/script.js" type='module' defer></script>
@@ -44,8 +47,14 @@
 					>
 				</form>
 			</div>
-			<div id="skills-zone">
-
+			<div 
+				id="found-skills-zone"
+				style="display:none"
+			>
+		</div>
+			<div 
+				id="all-skills-zone"
+			>
 			</div>
 		</nav>
 		<header>
