@@ -31,3 +31,11 @@ export const handleFilterSkills = (e, skills, cb) => {
 	
 	return cb(correspondingSkills)
 }
+
+export const handleOnSearch = (e, skills, cb) => {
+	const provSkillList = handleFilterSkills(e, skills, (r) => r)
+
+	return cb('test')
+
+
+}

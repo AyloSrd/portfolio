@@ -1,6 +1,8 @@
 import SkillTag from './SkillTag.js'
 
-const SkillTagsList = ({ title, skills}) => {
+const SkillTagsList = ({ title, skills }) => {
+	
+	console.log(skills)
 	const template =  `
 	${ title
 		? `<h3>${ title }</h3>` 

@@ -8,7 +8,8 @@ import {
 	handleCloseModal,
 	handleScrollLeft,
 	handleScrollRight,
-	handleFilterSkills 
+	handleFilterSkills,
+	handleOnSearch
 } from './modules/helpers/helpers.js'
 import AllSkills  from './modules/templates/AllSkills.js'
 import ArticlesContainer  from './modules/templates/ArticlesContainer.js'
@@ -55,9 +56,11 @@ AllSkillsZone.innerHTML = AllSkills(skills)
 SearchForm.addEventListener('submit', e => {
 	e.preventDefault()
 })
-SearchForm.addEventListener('search', e => {
-	FoundSkillsZone.innerHTML = SkillTagsList()
-})
+SearchForm.addEventListener('search', e => handleFilterSkills(e, skills, correspondingSkills => {
+	if ( foundSkills.length > 5 ) return
+	foundSkills.push(correspondingSkills[0])
+	SkillTagsList({ title: null, skills: correspondingSkills})
+}))
 
 SearchInput.addEventListener('input', e => handleFilterSkills(e, skills, correspondingSkills => AllSkillsZone.innerHTML = AllSkills(correspondingSkills)))
 SearchInput.addEventListener('focus', () => AllSkillsZone.style.display = 'block')

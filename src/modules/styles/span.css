@@ -1,7 +1,8 @@
 span.skill-tag {
 	display: inline-block;
 	border-radius: calc(var(--small-unit)/5);
-	padding: calc(var(--small-unit)/3)
+	padding: calc(var(--small-unit)/3);
+	margin: calc(var(--small-unit)/5);
 }
 
 span.skill-tag.listed-skill {
