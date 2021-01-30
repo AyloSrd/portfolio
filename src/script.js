@@ -56,10 +56,11 @@ AllSkillsZone.innerHTML = AllSkills(skills)
 SearchForm.addEventListener('submit', e => {
 	e.preventDefault()
 })
-SearchForm.addEventListener('search', e => handleFilterSkills(e, skills, correspondingSkills => {
+SearchForm.addEventListener('search', e => handleOnSearch(e, skills, correspondingSkills => {
 	if ( foundSkills.length > 5 ) return
 	foundSkills.push(correspondingSkills[0])
-	SkillTagsList({ title: null, skills: correspondingSkills})
+	FoundSkillsZone.style.display = 'block'
+	FoundSkillsZone.innerHTML = SkillTagsList({ title: null, skills: correspondingSkills})
 }))
 
 SearchInput.addEventListener('input', e => handleFilterSkills(e, skills, correspondingSkills => AllSkillsZone.innerHTML = AllSkills(correspondingSkills)))
