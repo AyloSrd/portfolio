@@ -18,3 +18,17 @@ export const handleCloseModal = Modal => Modal.style.display = 'none'
 export const handleScrollLeft = e => e.target.nextElementSibling.nextElementSibling.scrollLeft -= 200
 
 export const handleScrollRight = e => e.target.nextElementSibling.scrollLeft += 200
+
+export const handleOnInput = (e, skills, cb) => {
+	const searchInput = e.target.value
+	const foundSkills = { categories: skills.categories }
+
+	skills.categories
+		.forEach(category => {
+			if (!foundSkills[category.split(' ')[0].toLowerCase()]) foundSkills[category.split(' ')[0].toLowerCase()]
+			foundSkills[category.split(' ')[0].toLowerCase()] = skills[category.split(' ')[0].toLowerCase()].filter(skill => skill.includes(searchInput))
+		})
+	
+	cb(foundSkills)
+	
+}

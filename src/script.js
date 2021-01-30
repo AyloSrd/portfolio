@@ -7,7 +7,8 @@ import {
 	handleOpenModal, 
 	handleCloseModal,
 	handleScrollLeft,
-	handleScrollRight 
+	handleScrollRight,
+	handleOnInput 
 } from './modules/helpers/helpers.js'
 import AllSkills  from './modules/templates/AllSkills.js'
 import ArticlesContainer  from './modules/templates/ArticlesContainer.js'
@@ -47,6 +48,14 @@ PortfolioScroll.innerHTML = ArticlesContainer(portfolio)
 
 AllSkillsZone.innerHTML = AllSkills(skills)
 
+SearchForm.addEventListener('submit', e => {
+	e.preventDefault()
+})
+SearchForm.addEventListener('search', e => {
+	console.log(e.target.value)
+})
+
+SearchInput.addEventListener('input', e => handleOnInput(e, skills, (foundSkills) => AllSkillsZone.innerHTML = AllSkills(foundSkills)))
 SearchInput.addEventListener('focus', () => AllSkillsZone.style.display = 'block')
 SearchInput.addEventListener('blur', () => AllSkillsZone.style.display = 'none')
 
