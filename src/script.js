@@ -8,12 +8,13 @@ import {
 	handleCloseModal,
 	handleScrollLeft,
 	handleScrollRight,
-	handleOnInput 
+	handleFilterSkills 
 } from './modules/helpers/helpers.js'
 import AllSkills  from './modules/templates/AllSkills.js'
 import ArticlesContainer  from './modules/templates/ArticlesContainer.js'
+import SkillTagsList from './modules/templates/SkillTagsList.js'
 
-/* GENERAL CONSTANTS */
+/* GENERAL VARIABLE */
 const MODE_VARIABLES = {
 	dark:  [
 		['--primary-important', '#fff'],
@@ -32,10 +33,13 @@ const MODE_VARIABLES = {
 	]
 }
 
+let foundSkills = []
+
 /* PAGE ELEMENTS */
 const Modal = document.getElementById('modal')
 const PortfolioScroll = document.getElementById('portfolio-scroll')
 const AllSkillsZone = document.getElementById('all-skills-zone')
+const FoundSkillsZone = document.getElementById('found-skills-zone')
 const SearchForm = document.getElementById('search-form')
 const SearchInput = document.getElementById('search-input')
 
@@ -52,10 +56,10 @@ SearchForm.addEventListener('submit', e => {
 	e.preventDefault()
 })
 SearchForm.addEventListener('search', e => {
-	console.log(e.target.value)
+	FoundSkillsZone.innerHTML = SkillTagsList()
 })
 
-SearchInput.addEventListener('input', e => handleOnInput(e, skills, (foundSkills) => AllSkillsZone.innerHTML = AllSkills(foundSkills)))
+SearchInput.addEventListener('input', e => handleFilterSkills(e, skills, correspondingSkills => AllSkillsZone.innerHTML = AllSkills(correspondingSkills)))
 SearchInput.addEventListener('focus', () => AllSkillsZone.style.display = 'block')
 SearchInput.addEventListener('blur', () => AllSkillsZone.style.display = 'none')
 

@@ -19,16 +19,15 @@ export const handleScrollLeft = e => e.target.nextElementSibling.nextElementSibl
 
 export const handleScrollRight = e => e.target.nextElementSibling.scrollLeft += 200
 
-export const handleOnInput = (e, skills, cb) => {
+export const handleFilterSkills = (e, skills, cb) => {
 	const searchInput = e.target.value
-	const foundSkills = { categories: skills.categories }
+	const correspondingSkills = { categories: skills.categories }
 
 	skills.categories
 		.forEach(category => {
-			if (!foundSkills[category.split(' ')[0].toLowerCase()]) foundSkills[category.split(' ')[0].toLowerCase()]
-			foundSkills[category.split(' ')[0].toLowerCase()] = skills[category.split(' ')[0].toLowerCase()].filter(skill => skill.includes(searchInput))
+			if (!correspondingSkills[category.split(' ')[0].toLowerCase()]) correspondingSkills[category.split(' ')[0].toLowerCase()]
+			correspondingSkills[category.split(' ')[0].toLowerCase()] = skills[category.split(' ')[0].toLowerCase()].filter(skill => skill.includes(searchInput))
 		})
 	
-	cb(foundSkills)
-	
+	return cb(correspondingSkills)
 }

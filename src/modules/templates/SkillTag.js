@@ -3,8 +3,8 @@ const SkillTag = ({ skill, researchedSkill }) => {
 	<span
 		class="skill-tag${ 
 			researchedSkill 
-			? 'researched-skill'
-			: 'listed-skill'
+			? ' researched-skill'
+			: ' listed-skill'
 		}"
 	>
 		${skill}
