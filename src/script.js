@@ -35,15 +35,27 @@ const MODE_VARIABLES = {
 const Modal = document.getElementById('modal')
 const PortfolioScroll = document.getElementById('portfolio-scroll')
 const AllSkillsZone = document.getElementById('all-skills-zone')
+const SearchForm = document.getElementById('search-form')
+const SearchInput = document.getElementById('search-input')
 
 
 /* EVENTS */
+
 Modal.addEventListener('click', () => handleCloseModal(Modal))
+
 PortfolioScroll.innerHTML = ArticlesContainer(portfolio)
+
 AllSkillsZone.innerHTML = AllSkills(skills)
+
+SearchInput.addEventListener('focus', () => AllSkillsZone.style.display = 'block')
+SearchInput.addEventListener('blur', () => AllSkillsZone.style.display = 'none')
+
 document.getElementById('dark-mode-btn').addEventListener('change', e => changeMode({e, MODE_VARIABLES}))//dark-mode
+
 document.querySelectorAll('div.horizontal-scroll-container article').forEach(article => article.addEventListener('click', () => handleOpenModal(Modal)))//click on article to open modal
+
 document.querySelectorAll('button.scroll-left').forEach(btn => btn.addEventListener('click', e => handleScrollLeft(e)))//scroll-left buttons
+
 document.querySelectorAll('button.scroll-right').forEach(btn => btn.addEventListener('click', e => handleScrollRight(e)))//scroll-right buttons
 
 

@@ -3,7 +3,7 @@ import SkillTag from './SkillTag.js'
 const SkillTagsList = ({ title, skills}) => {
 	const template =  `
 	${ title
-		? `${ title }` 
+		? `<h3>${ title }</h3>` 
 		: ''
 	}
 	<div class="skill-list">
@@ -12,7 +12,6 @@ const SkillTagsList = ({ title, skills}) => {
 		}
 	<div>
 	`
-	
 	return template
 }
 
