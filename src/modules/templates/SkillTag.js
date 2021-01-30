@@ -4,7 +4,7 @@ const SkillTag = ({ skill, researchedSkill }) => {
 		class="skill-tag${ 
 			researchedSkill 
 			? 'researched-skill'
-			: ''
+			: 'listed-skill'
 		}"
 	>
 		${skill}

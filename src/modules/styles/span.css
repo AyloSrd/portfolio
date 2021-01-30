@@ -1,0 +1,19 @@
+span.skill-tag {
+	display: inline-block;
+	border-radius: calc(var(--small-unit)/5);
+	padding: calc(var(--small-unit)/3)
+}
+
+span.skill-tag.listed-skill {
+	border: none;
+	background-color: var(--secondary);
+	color: var(--bkg);
+}
+
+span.skill-tag.researched-skill {
+	border: calc(var(--small-unit)/5) solid var(--secondary);
+	background-color: transparent;
+	color: var(--secondary);
+	font-size: 0.8rem;
+	font-weight: 700;
+}

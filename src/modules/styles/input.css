@@ -2,24 +2,24 @@ input[type=range] {
 	-webkit-appearance: none; /* Hides the slider so that custom slider can be made */
 	width: var(--standard-unit); /* Specific width is required for Firefox. */
 	background: transparent; /* Otherwise white in Chrome */
-  }
+}
   
-  input[type=range]::-webkit-slider-thumb {
+input[type=range]::-webkit-slider-thumb {
 	-webkit-appearance: none;
-  }
+}
   
-  input[type=range]:focus {
+input[type=range]:focus {
 	outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
-  }
+}
   
-  input[type=range]::-ms-track {
+input[type=range]::-ms-track {
 	width: 100%;
 	cursor: pointer;
 	/* Hides the slider so custom styles can be added */
 	background: transparent; 
 	border-color: transparent;
 	color: transparent;
-  }
+}
   /* Special styling for WebKit/Blink */
 input[type=range]::-webkit-slider-thumb {
 	-webkit-appearance: none;
@@ -29,65 +29,65 @@ input[type=range]::-webkit-slider-thumb {
 	background: var(--secondary);
 	cursor: pointer;
 	margin-top: calc(-1*var(--small-unit)/3); /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
-  }
+}
   
   /* All the same stuff for Firefox */
-  input[type=range]::-moz-range-thumb {
+input[type=range]::-moz-range-thumb {
 	height: var(--small-unit);
 	width: var(--small-unit);
 	border-radius: 50%;
 	background: var(--secondary);
 	cursor: pointer;
-  }
+}
   
   /* All the same stuff for IE */
-  input[type=range]::-ms-thumb {
+input[type=range]::-ms-thumb {
 	height: var(--small-unit);
 	width: var(--small-unit);
 	border-radius: 50%;
 	background: var(--secondary);
 	cursor: pointer;
-  }
+}
 
-  input[type=range]::-webkit-slider-runnable-track {
+input[type=range]::-webkit-slider-runnable-track {
 	width: 100%;
 	height: calc(var(--small-unit)/2);
 	cursor: pointer;
 	background: var(--bkg-dark-mode-toggler);
 	border-radius: calc(var(--small-unit)/2);
-  }
+}
   
-  input[type=range]:focus::-webkit-slider-runnable-track {
+input[type=range]:focus::-webkit-slider-runnable-track {
 	background: var(--bkg-dark-mode-toggler);
-  }
+}
   
-  input[type=range]::-moz-range-track {
+input[type=range]::-moz-range-track {
 	width: 100%;
 	height: calc(var(--small-unit)/2);
 	cursor: pointer;
 	background: var(--bkg-dark-mode-toggler);
 	border-radius: calc(var(--small-unit)/2);
-  }
+}
   
-  input[type=range]::-ms-track {
+input[type=range]::-ms-track {
 	width: 100%;
 	height: calc(var(--small-unit)/2);
 	cursor: pointer;
 	background: transparent;
 	border-color: transparent;
 	color: transparent;
-  }
-  input[type=range]::-ms-fill-lower {
+}
+input[type=range]::-ms-fill-lower {
 	background: var(--bkg-dark-mode-toggler);
 	border-radius: calc(var(--small-unit)/2);
-  }
-  input[type=range]:focus::-ms-fill-lower {
+}
+input[type=range]:focus::-ms-fill-lower {
 	background: var(--bkg-dark-mode-toggler);
-  }
-  input[type=range]::-ms-fill-upper {
+}
+input[type=range]::-ms-fill-upper {
 	background: var(--bkg-dark-mode-toggler);
 	border-radius: calc(var(--small-unit)/2);
-  }
-  input[type=range]:focus::-ms-fill-upper {
+}
+input[type=range]:focus::-ms-fill-upper {
 	background: var(--bkg-dark-mode-toggler);
-  }
+}
