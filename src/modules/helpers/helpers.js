@@ -34,6 +34,11 @@ export const handleFilterSkills = (e, skills, cb) => {
 
 export const handleOnSearch = (e, skills, cb) => {
 	const provSkillList = handleFilterSkills(e, skills, (r) => r)
+	let arrOfSkills= []
+	provSkillList.categories
+		.forEach(category => arrOfSkills = [...arrOfSkills, ...provSkillList[category.split(' ')[0].toLowerCase()]])
 
-	return cb(['test'])
+
+
+	return cb(arrOfSkills[0])
 }
