@@ -17,3 +17,10 @@ nav > div.logo-container-nav > img {
 	height: 100%;
 	width: auto;
 }
+
+nav div#all-skills-zone {
+	height: 'auto';
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.25s ease-in;
+}

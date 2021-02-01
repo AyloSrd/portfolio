@@ -57,17 +57,24 @@ SearchForm.addEventListener('submit', e => {
 	e.preventDefault()
 })
 SearchForm.addEventListener('search', e => handleOnSearch(e, skills, correspondingSkill => {
-	if ( foundSkills.length >= 5 ) return
-	foundSkills.push(correspondingSkill)
-	FoundSkillsZone.style.display = 'block'
-	FoundSkillsZone.innerHTML = SkillTagsList({ title: null, skills: foundSkills})
-	SearchInput.value = ''
-	SearchInput.dispatchEvent(new Event('input'))
+	if ( foundSkills.length < 3 && !foundSkills.includes(correspondingSkill) ) {
+		foundSkills.push(correspondingSkill)
+		FoundSkillsZone.innerHTML = SkillTagsList({ title: null, skills: foundSkills})
+		SearchInput.value = ''
+		SearchInput.dispatchEvent(new Event('input'))
+	}
 }))
 
 SearchInput.addEventListener('input', e => handleFilterSkills(e, skills, correspondingSkills => AllSkillsZone.innerHTML = AllSkills(correspondingSkills)))
-SearchInput.addEventListener('focus', () => AllSkillsZone.style.display = 'block')
-SearchInput.addEventListener('blur', () => AllSkillsZone.style.display = 'none')
+SearchInput.addEventListener('focus', () => AllSkillsZone.style.maxHeight = '500px')
+
+AllSkillsZone.addEventListener('click', e => {
+	console.log(e.target.classList)
+	if (e.target.classList.contains('listed-skill') && foundSkills.length < 3 && !foundSkills.includes(e.target.innerHTML)) foundSkills.push(e.target.innerHTML)
+	FoundSkillsZone.innerHTML = SkillTagsList({ title: null, skills: foundSkills})
+	SearchInput.value = ''
+	SearchInput.dispatchEvent(new Event('input'))
+})
 
 document.getElementById('dark-mode-btn').addEventListener('change', e => changeMode({e, MODE_VARIABLES}))//dark-mode
 
@@ -76,5 +83,6 @@ document.querySelectorAll('div.horizontal-scroll-container article').forEach(art
 document.querySelectorAll('button.scroll-left').forEach(btn => btn.addEventListener('click', e => handleScrollLeft(e)))//scroll-left buttons
 
 document.querySelectorAll('button.scroll-right').forEach(btn => btn.addEventListener('click', e => handleScrollRight(e)))//scroll-right buttons
+
 
 

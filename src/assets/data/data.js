@@ -8,11 +8,16 @@ export const skills = {
 export const portfolio = [
 	{
 		image: {
-			url:'faces.jpg',
+			url:'faces.jpg', 
 			alt:'faces'
 		},
 		title: 'Test',
-		shortDescription: 'test description'
+		shortDescription: 'test description',
+		date: '',
+		longDescription: '',
+		technologies: [],
+		links: [],
+		skills: []
 	},
 	{
 		image: {
@@ -103,4 +108,36 @@ export const portfolio = [
 		shortDescription: 'test description'
 	}
 
+]
+
+export const workExperience = [
+	{
+		image: {
+			url: 'h3d.jpg',
+			alt: 'H3 Dynamics'
+		},
+		title: 'H3 Dynamics',
+		shortDescription: 'Drones, A.I. and Hydrogen Fuel Cells - EMEA Account manager & Marketing Lead',
+		date: '2017 - 2019',
+		longDescription: '',
+		tasks: [],
+		links: [],
+		skills: []
+	}
+]
+
+export const education = [
+	{
+		image: {
+			url: 'h3d.jpg',
+			alt: 'H3 Dynamics'
+		},
+		title: 'H3 Dynamics',
+		shortDescription: '',
+		date: '2017 - 2019',
+		longDescription: '',
+		tasks: [],
+		links: [],
+		skills: []
+	}
 ]
