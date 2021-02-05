@@ -39,6 +39,8 @@ let foundSkills = []
 /* PAGE ELEMENTS */
 const Modal = document.getElementById('modal')
 const PortfolioScroll = document.getElementById('portfolio-scroll')
+const WorkScroll = document.getElementById('work-scroll')
+const EducationScroll = document.getElementById('education-scroll')
 const AllSkillsZone = document.getElementById('all-skills-zone')
 const FoundSkillsZone = document.getElementById('found-skills-zone')
 const SearchForm = document.getElementById('search-form')
