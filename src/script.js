@@ -1,5 +1,7 @@
 import { 
 	portfolio,
+	work,
+	education,
 	skills
 } from './assets/data/data.js'
 import { 
@@ -11,6 +13,7 @@ import {
 	handleFilterSkills,
 	handleOnSearch
 } from './modules/helpers/helpers.js'
+import Modal  from './modules/templates/Modal.js'
 import AllSkills  from './modules/templates/AllSkills.js'
 import ArticlesContainer  from './modules/templates/ArticlesContainer.js'
 import SkillTagsList from './modules/templates/SkillTagsList.js'
@@ -37,7 +40,7 @@ const MODE_VARIABLES = {
 let foundSkills = []
 
 /* PAGE ELEMENTS */
-const Modal = document.getElementById('modal')
+const ModalContainer = document.getElementById('modal-container')
 const PortfolioScroll = document.getElementById('portfolio-scroll')
 const WorkScroll = document.getElementById('work-scroll')
 const EducationScroll = document.getElementById('education-scroll')
@@ -49,9 +52,10 @@ const SearchInput = document.getElementById('search-input')
 
 /* EVENTS */
 
-Modal.addEventListener('click', () => handleCloseModal(Modal))
-
+ModalContainer.addEventListener('click', () => handleCloseModal(ModalContainer))
 PortfolioScroll.innerHTML = ArticlesContainer(portfolio)
+WorkScroll.innerHTML = ArticlesContainer(work)
+EducationScroll.innerHTML = ArticlesContainer(education)
 
 AllSkillsZone.innerHTML = AllSkills(skills)
 
@@ -80,7 +84,7 @@ AllSkillsZone.addEventListener('click', e => {
 
 document.getElementById('dark-mode-btn').addEventListener('change', e => changeMode({e, MODE_VARIABLES}))//dark-mode
 
-document.querySelectorAll('div.horizontal-scroll-container article').forEach(article => article.addEventListener('click', () => handleOpenModal(Modal)))//click on article to open modal
+document.querySelectorAll('div.horizontal-scroll-container article').forEach(article => article.addEventListener('click', () => handleOpenModal(ModalContainer, Modal)))//click on article to open modal
 
 document.querySelectorAll('button.scroll-left').forEach(btn => btn.addEventListener('click', e => handleScrollLeft(e)))//scroll-left buttons
 

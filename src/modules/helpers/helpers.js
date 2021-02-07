@@ -11,9 +11,15 @@ export const changeMode = ({e, MODE_VARIABLES}) => {
 
 }
 
-export const handleOpenModal = Modal => Modal.style.display = 'grid'
+export const handleOpenModal = (ModalContainer, cb) => {
+	ModalContainer.style.display = 'grid'
+	ModalContainer.innerHTML = cb()
+}
 
-export const handleCloseModal = Modal => Modal.style.display = 'none'
+export const handleCloseModal = ModalContainer => {
+	ModalContainer.style.display = 'none'
+	ModalContainer.innerHTML = ''
+}
 
 export const handleScrollLeft = e => e.target.nextElementSibling.nextElementSibling.scrollLeft -= 200
 
@@ -42,3 +48,5 @@ export const handleOnSearch = (e, skills, cb) => {
 
 	return cb(arrOfSkills[0])
 }
+
+export const findModalContentById = (id, data) =>  data[id.split('-')[0]].filter(obj => obj.id === id)

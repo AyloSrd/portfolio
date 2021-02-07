@@ -122,13 +122,13 @@ export const portfolio = [
 
 ]
 
-export const workExperience = [
+export const work = [
 	{
 	  "title": "H3 Dynamics",
-	  "id": "0.26374097941255537-H3 Dynamics",
+	  "id": "work-0.26374097941255537-H3 Dynamics",
 	  "image": {
-		"url": "h3.jpg",
-		"alt": "h3"
+		"url": "h3d.jpg",
+		"alt": "h3d"
 	  },
 	  "date": "2010",
 	  "links": [],
@@ -154,10 +154,10 @@ export const workExperience = [
 	},
 	{
 	  "title": "B&B Villa Rosa",
-	  "id": "0.970450827304862-B&B Villa Rosa",
+	  "id": "work-0.970450827304862-B&B Villa Rosa",
 	  "image": {
-		"url": "b&b.jpg",
-		"alt": "b&b"
+		"url": "b&bvillarosa.jpg",
+		"alt": "b&bvillarosa"
 	  },
 	  "date": "2010",
 	  "links": [],
@@ -172,10 +172,10 @@ export const workExperience = [
 	},
 	{
 	  "title": "Stefano Carboni Law Firm",
-	  "id": "0.46033034389910243-Stefano Carboni Law Firm",
+	  "id": "work-0.46033034389910243-Stefano Carboni Law Firm",
 	  "image": {
-		"url": "stefano.jpg",
-		"alt": "stefano"
+		"url": "avvcarboni.jpg",
+		"alt": "avvcarboni"
 	  },
 	  "date": "2010",
 	  "links": [],
@@ -189,7 +189,7 @@ export const workExperience = [
 	},
 	{
 	  "title": "ASKE Avocats Conseils",
-	  "id": "0.23553856554512076-ASKE Avocats Conseils",
+	  "id": "work-0.23553856554512076-ASKE Avocats Conseils",
 	  "image": {
 		"url": "aske.jpg",
 		"alt": "aske"
@@ -210,7 +210,7 @@ export const workExperience = [
 export const education = [
 	{
 	  "title": "EMLYON Business School",
-	  "id": "0.9074130134886937-EMLYON Business School",
+	  "id": "education-0.9074130134886937-EMLYON Business School",
 	  "image": {
 		"url": "emlyon.jpg",
 		"alt": "emlyon"
@@ -226,10 +226,10 @@ export const education = [
 	},
 	{
 	  "title": "East China Normal University – 华东师范大学",
-	  "id": "0.8372885100124878-East China Normal University – 华东师范大学",
+	  "id": "education-0.8372885100124878-East China Normal University – 华东师范大学",
 	  "image": {
-		"url": "east.jpg",
-		"alt": "east"
+		"url": "ecnu.jpg",
+		"alt": "ecnu"
 	  },
 	  "date": "2010",
 	  "links": [],
@@ -242,10 +242,10 @@ export const education = [
 	},
 	{
 	  "title": "University of Sassari – Faculty of Law",
-	  "id": "0.19035757271907383-University of Sassari – Faculty of Law",
+	  "id": "education-0.19035757271907383-University of Sassari – Faculty of Law",
 	  "image": {
-		"url": "university.jpg",
-		"alt": "university"
+		"url": "sassari.jpg",
+		"alt": "sassari"
 	  },
 	  "date": "2010",
 	  "links": [],
@@ -259,10 +259,10 @@ export const education = [
 	},
 	{
 	  "title": "University of Poitiers - Faculty of Law and Social Science",
-	  "id": "0.38882941259712034-University of Poitiers - Faculty of Law and Social Science",
+	  "id": "education-0.38882941259712034-University of Poitiers - Faculty of Law and Social Science",
 	  "image": {
-		"url": "university.jpg",
-		"alt": "university"
+		"url": "poitiers.jpg",
+		"alt": "poitiers"
 	  },
 	  "date": "2010",
 	  "links": [],
@@ -275,10 +275,10 @@ export const education = [
 	},
 	{
 	  "title": "E. Fermi High School for Science",
-	  "id": "0.384709619592122-E. Fermi High School for Science",
+	  "id": "education-0.384709619592122-E. Fermi High School for Science",
 	  "image": {
-		"url": "e..jpg",
-		"alt": "e."
+		"url": "liceo.jpg",
+		"alt": "liceo"
 	  },
 	  "date": "2010",
 	  "links": [],
@@ -294,7 +294,7 @@ export const education = [
 const edu = Array.from(document.querySelectorAll('#\\33  > div.containerTimeline div.containerLavoro div.titolettoLavoro')).map(ed => {
 	const edObj = {}
 	edObj.title = ed.querySelector('div.datoreDescrizioneTitolo h3').innerText
-	edObj.id = `${Math.random()}-${edObj.title}`
+	edObj.id = `education-${Math.random()}-${edObj.title}`
 	edObj.image = {}
 	edObj.image.url = `${edObj.title.split(' ')[0].toLowerCase()}.jpg`
 	edObj.image.alt = `${edObj.title.split(' ')[0].toLowerCase()}`
@@ -320,7 +320,7 @@ const jobs = Array.from(document.querySelectorAll('#\\32  > div.containerTimelin
 const workExperience = jobs.map(job => {
     const jobObj = {}
 	jobObj.title = job.querySelector('div.datoreDescrizioneTitolo h3').innerText
-	jobObj.id = `${Math.random()}-${jobObj.title}`
+	jobObj.id = `work-${Math.random()}-${jobObj.title}`
 	jobObj.image = {}
 	jobObj.image.url = `${jobObj.title.split(' ')[0].toLowerCase()}.jpg`
 	jobObj.image.alt = `${jobObj.title.split(' ')[0].toLowerCase()}`

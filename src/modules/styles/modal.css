@@ -1,5 +1,5 @@
-section#modal {
-	position: absolute;
+section#modal-container {
+	position: fixed;
 	top: 0;
 	left: 0;
 	height: 100vh;
@@ -14,6 +14,6 @@ section#modal {
 	-webkit-backdrop-filter: blur( 15.0px );
 }
 
-section#modal div.modal-container {
+section#modal-container div.modal {
 	background-color: var(--bkg);
 }
