@@ -1,15 +1,17 @@
 export const changeMode = ({e, MODE_VARIABLES}) => {
 	const mode = e.target.value === '0' 
-		? 'light' 
-		: 'dark'
+	? 'light' 
+	: 'dark'
 	MODE_VARIABLES[mode].forEach(cssVar => {
 		document.documentElement.style.setProperty(...cssVar)
 	})
-
+	
 	document.querySelector('link[rel="shortcut icon"]').href = `src/assets/imgs/favicon-${mode}-mode.ico`;
 	document.querySelector('link[rel="icon"]').href = `src/assets/imgs/favicon-${mode}-mode.ico`;
-
+	
 }
+
+export const findModalContentById = (id, data) =>  data[id.split('-')[0]].filter(obj => obj.id === id)
 
 export const handleOpenModal = (ModalContainer, cb) => {
 	ModalContainer.style.display = 'grid'
@@ -48,5 +50,3 @@ export const handleOnSearch = (e, skills, cb) => {
 
 	return cb(arrOfSkills[0])
 }
-
-export const findModalContentById = (id, data) =>  data[id.split('-')[0]].filter(obj => obj.id === id)

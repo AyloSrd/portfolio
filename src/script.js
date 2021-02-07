@@ -6,6 +6,7 @@ import {
 } from './assets/data/data.js'
 import { 
 	changeMode,
+	findModalContentById,
 	handleOpenModal, 
 	handleCloseModal,
 	handleScrollLeft,
