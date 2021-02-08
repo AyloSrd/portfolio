@@ -11,7 +11,7 @@ export const changeMode = ({e, MODE_VARIABLES}) => {
 	
 }
 
-export const findModalContentById = (id, data) =>  data[id.split('-')[0]].filter(obj => obj.id === id)
+export const findModalContentById = (id, data) =>  data[id.split('-')[0]].filter(obj => obj.id === id)[0]
 
 export const handleOpenModal = (ModalContainer, cb) => {
 	ModalContainer.style.display = 'grid'

@@ -85,7 +85,7 @@ AllSkillsZone.addEventListener('click', e => {
 
 document.getElementById('dark-mode-btn').addEventListener('change', e => changeMode({e, MODE_VARIABLES}))//dark-mode
 
-document.querySelectorAll('div.horizontal-scroll-container article').forEach(article => article.addEventListener('click', () => handleOpenModal(ModalContainer, Modal)))//click on article to open modal
+// document.querySelectorAll('div.horizontal-scroll-container article').forEach(article => article.addEventListener('click', () => handleOpenModal(ModalContainer, Modal)))//click on article to open modal
 
 document.querySelectorAll('button.scroll-left').forEach(btn => btn.addEventListener('click', e => handleScrollLeft(e)))//scroll-left buttons
 
@@ -93,3 +93,16 @@ document.querySelectorAll('button.scroll-right').forEach(btn => btn.addEventList
 
 
 
+document.querySelectorAll('div.horizontal-scroll-container').forEach(div => {
+	div.addEventListener('click', e => {
+		const isArticle = e.target.tagName.toLowerCase() === 'article' 
+			|| 	e.target.parentNode.tagName.toLowerCase() === 'article'
+			|| e.target.parentNode.parentNode.tagName.toLowerCase() === 'article'		
+		if (isArticle) {
+			let article = e.target
+			while(article.tagName.toLowerCase() !== 'article')	article = article.parentNode
+			const { uniqueId } = article.dataset
+			console.log(findModalContentById(uniqueId, { work, education }))
+		}
+	})
+})
