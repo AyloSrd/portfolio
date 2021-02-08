@@ -1,6 +1,5 @@
 const Article = article => {
 	const { image, id, title, shortDescription } = article
-	console.log('id', id)
 	const template = `
 <article data-unique-id="${id}">
 	<div class="img-container">

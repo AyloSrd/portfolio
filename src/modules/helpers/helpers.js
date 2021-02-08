@@ -45,8 +45,5 @@ export const handleOnSearch = (e, skills, cb) => {
 	let arrOfSkills= []
 	provSkillList.categories
 		.forEach(category => arrOfSkills = [...arrOfSkills, ...provSkillList[category.split(' ')[0].toLowerCase()]])
-
-
-
 	return cb(arrOfSkills[0])
 }

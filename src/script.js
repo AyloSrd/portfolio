@@ -76,7 +76,6 @@ SearchInput.addEventListener('input', e => handleFilterSkills(e, skills, corresp
 SearchInput.addEventListener('focus', () => AllSkillsZone.style.maxHeight = '500px')
 
 AllSkillsZone.addEventListener('click', e => {
-	console.log(e.target.classList)
 	if (e.target.classList.contains('listed-skill') && foundSkills.length < 3 && !foundSkills.includes(e.target.innerHTML)) foundSkills.push(e.target.innerHTML)
 	FoundSkillsZone.innerHTML = SkillTagsList({ title: null, skills: foundSkills})
 	SearchInput.value = ''
@@ -85,7 +84,6 @@ AllSkillsZone.addEventListener('click', e => {
 
 document.getElementById('dark-mode-btn').addEventListener('change', e => changeMode({e, MODE_VARIABLES}))//dark-mode
 
-// document.querySelectorAll('div.horizontal-scroll-container article').forEach(article => article.addEventListener('click', () => handleOpenModal(ModalContainer, Modal)))//click on article to open modal
 
 document.querySelectorAll('button.scroll-left').forEach(btn => btn.addEventListener('click', e => handleScrollLeft(e)))//scroll-left buttons
 
@@ -102,7 +100,8 @@ document.querySelectorAll('div.horizontal-scroll-container').forEach(div => {
 			let article = e.target
 			while(article.tagName.toLowerCase() !== 'article')	article = article.parentNode
 			const { uniqueId } = article.dataset
-			console.log(findModalContentById(uniqueId, { work, education }))
+			const modelContent = findModalContentById(uniqueId, { work, education })
+			handleOpenModal(ModalContainer, () => Modal(modelContent))
 		}
 	})
 })
