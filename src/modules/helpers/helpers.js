@@ -47,3 +47,11 @@ export const handleOnSearch = (e, skills, cb) => {
 		.forEach(category => arrOfSkills = [...arrOfSkills, ...provSkillList[category.split(' ')[0].toLowerCase()]])
 	return cb(arrOfSkills[0])
 }
+
+export const filterArticlesBySkills = (foundSkills, articles) => {
+	const newArticles = {}
+	for(let key in articles) {
+		newArticles[key] = articles[key].filter(article => foundSkills.every(skill => article['skills'].includes(skill)))
+	}
+	return newArticles
+}

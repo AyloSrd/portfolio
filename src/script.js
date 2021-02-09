@@ -12,14 +12,15 @@ import {
 	handleScrollLeft,
 	handleScrollRight,
 	handleFilterSkills,
-	handleOnSearch
+	handleOnSearch,
+	filterArticlesBySkills
 } from './modules/helpers/helpers.js'
 import Modal  from './modules/templates/Modal.js'
 import AllSkills  from './modules/templates/AllSkills.js'
 import ArticlesContainer  from './modules/templates/ArticlesContainer.js'
 import SkillTagsList from './modules/templates/SkillTagsList.js'
 
-/* GENERAL VARIABLE */
+/* GLOBAL VARIABLE */
 const MODE_VARIABLES = {
 	dark:  [
 		['--primary-important', '#fff'],
@@ -51,9 +52,13 @@ const SearchForm = document.getElementById('search-form')
 const SearchInput = document.getElementById('search-input')
 
 
-/* EVENTS */
+/* DOM MANIPULATION */
 
-ModalContainer.addEventListener('click', () => handleCloseModal(ModalContainer))
+document.getElementById('dark-mode-btn').addEventListener('change', e => changeMode({e, MODE_VARIABLES}))//dark-mode
+document.querySelectorAll('button.scroll-left').forEach(btn => btn.addEventListener('click', e => handleScrollLeft(e)))//scroll-left buttons
+document.querySelectorAll('button.scroll-right').forEach(btn => btn.addEventListener('click', e => handleScrollRight(e)))//scroll-right buttons
+
+ModalContainer.addEventListener('click', e => e.target.tagName.toLowerCase() === 'section' && handleCloseModal(ModalContainer))
 PortfolioScroll.innerHTML = ArticlesContainer(portfolio)
 WorkScroll.innerHTML = ArticlesContainer(work)
 EducationScroll.innerHTML = ArticlesContainer(education)
@@ -67,6 +72,10 @@ SearchForm.addEventListener('search', e => handleOnSearch(e, skills, correspondi
 	if ( foundSkills.length < 3 && !foundSkills.includes(correspondingSkill) ) {
 		foundSkills.push(correspondingSkill)
 		FoundSkillsZone.innerHTML = SkillTagsList({ title: null, skills: foundSkills})
+		const filteredArticles = filterArticlesBySkills(foundSkills, { portfolio, work, education})
+		PortfolioScroll.innerHTML = filteredArticles.portfolio ? ArticlesContainer(filteredArticles.portfolio) : ''
+		WorkScroll.innerHTML = filteredArticles.work ? ArticlesContainer(filteredArticles.work) : ''
+		EducationScroll.innerHTML = filteredArticles.education ? ArticlesContainer(filteredArticles.education) : ''
 		SearchInput.value = ''
 		SearchInput.dispatchEvent(new Event('input'))
 	}
@@ -76,25 +85,20 @@ SearchInput.addEventListener('input', e => handleFilterSkills(e, skills, corresp
 SearchInput.addEventListener('focus', () => AllSkillsZone.style.maxHeight = '500px')
 
 AllSkillsZone.addEventListener('click', e => {
-	if (e.target.classList.contains('listed-skill') && foundSkills.length < 3 && !foundSkills.includes(e.target.innerHTML)) foundSkills.push(e.target.innerHTML)
-	FoundSkillsZone.innerHTML = SkillTagsList({ title: null, skills: foundSkills})
+	if (e.target.classList.contains('listed-skill') && foundSkills.length < 3 && !foundSkills.includes(e.target.innerHTML.trim())) foundSkills.push(e.target.innerHTML.trim())
+	FoundSkillsZone.innerHTML = SkillTagsList({ title: null, skills: foundSkills })
 	SearchInput.value = ''
 	SearchInput.dispatchEvent(new Event('input'))
+	const filteredArticles = filterArticlesBySkills(foundSkills, { portfolio, work, education})
+	PortfolioScroll.innerHTML = filteredArticles.portfolio ? ArticlesContainer(filteredArticles.portfolio) : ''
+	WorkScroll.innerHTML = filteredArticles.work ? ArticlesContainer(filteredArticles.work) : ''
+	EducationScroll.innerHTML = filteredArticles.education ? ArticlesContainer(filteredArticles.education) : ''
 })
-
-document.getElementById('dark-mode-btn').addEventListener('change', e => changeMode({e, MODE_VARIABLES}))//dark-mode
-
-
-document.querySelectorAll('button.scroll-left').forEach(btn => btn.addEventListener('click', e => handleScrollLeft(e)))//scroll-left buttons
-
-document.querySelectorAll('button.scroll-right').forEach(btn => btn.addEventListener('click', e => handleScrollRight(e)))//scroll-right buttons
-
-
 
 document.querySelectorAll('div.horizontal-scroll-container').forEach(div => {
 	div.addEventListener('click', e => {
 		const isArticle = e.target.tagName.toLowerCase() === 'article' 
-			|| 	e.target.parentNode.tagName.toLowerCase() === 'article'
+			|| e.target.parentNode.tagName.toLowerCase() === 'article'
 			|| e.target.parentNode.parentNode.tagName.toLowerCase() === 'article'		
 		if (isArticle) {
 			let article = e.target
