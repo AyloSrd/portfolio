@@ -100,7 +100,7 @@ document.querySelectorAll('div.horizontal-scroll-container').forEach(div => {
 			let article = e.target
 			while(article.tagName.toLowerCase() !== 'article')	article = article.parentNode
 			const { uniqueId } = article.dataset
-			const modelContent = findModalContentById(uniqueId, { work, education })
+			const modelContent = findModalContentById(uniqueId, { portfolio, work, education })
 			handleOpenModal(ModalContainer, () => Modal(modelContent))
 		}
 	})

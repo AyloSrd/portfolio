@@ -7,119 +7,65 @@ export const skills = {
 
 export const portfolio = [
 	{
-		id:'iuhnflc52c45c6',
-		image: {
-			url:'faces.jpg', 
-			alt:'faces'
+		"title": "H3 Dynamics",
+		"id": "portfolio-0.263740979412555457-H3 Dynamics",
+		"image": {
+		  "url": "faces.jpg",
+		  "alt": "h3d"
 		},
-		title: 'Test',
-		shortDescription: 'test description',
-		date: '',
-		longDescription: '',
-		technologies: [],
-		links: [],
-		skills: []
+		"date": "2010",
+		"links": [],
+		"skills": ["test"],
+		"location": "Paris, France & Singapore",
+		"shortDescription": " Drones, Artificial Intelligence and Cleantech",
+		"role": "Sales & Marketing - Right Arm of the EMEA Director",
+		"description": "Covered several roles for the subsidiaries H3Zoom.AI (Artificial Intelligence for anomalies detection on infrastructures) and HES Energy Systems (Hydrogen Fuel Cells)."
 	},
 	{
-		id:'iuhnflc52c45c6',
-		image: {
-			url:'faces.jpg',
-			alt:'faces'
+		"title": "H3 Dynamics",
+		"id": "portfolio-0.26374097455521255537-H3 Dynamics",
+		"image": {
+		  "url": "faces.jpg",
+		  "alt": "h3d"
 		},
-		title: 'Test2',
-		shortDescription: 'test description'
+		"date": "2010",
+		"links": [],
+		"skills": ["test"],
+		"location": "Paris, France & Singapore",
+		"shortDescription": " Drones, Artificial Intelligence and Cleantech",
+		"role": "Sales & Marketing - Right Arm of the EMEA Director",
+		"description": "Covered several roles for the subsidiaries H3Zoom.AI (Artificial Intelligence for anomalies detection on infrastructures) and HES Energy Systems (Hydrogen Fuel Cells)."
 	},
 	{
-		id:'iuhnflc52c45c6',
-		image: {
-			url:'faces.jpg',
-			alt:'faces'
+		"title": "H3 Dynamics",
+		"id": "portfolio-0.6374097941255537-H3 Dynamics",
+		"image": {
+		  "url": "faces.jpg",
+		  "alt": "h3d"
 		},
-		title: 'Test',
-		shortDescription: 'test description'
-	},
+		"date": "2010",
+		"links": [],
+		"skills": ["test"],
+		"location": "Paris, France & Singapore",
+		"shortDescription": " Drones, Artificial Intelligence and Cleantech",
+		"role": "Sales & Marketing - Right Arm of the EMEA Director",
+		"description": "Covered several roles for the subsidiaries H3Zoom.AI (Artificial Intelligence for anomalies detection on infrastructures) and HES Energy Systems (Hydrogen Fuel Cells)."
+	},	
 	{
-		id:'iuhnflc52c45c6',
-		image: {
-			url:'faces.jpg',
-			alt:'faces'
+		"title": "H3 Dynamics",
+		"id": "portfolio-0.26374041255537-H3 Dynamics",
+		"image": {
+		  "url": "faces.jpg",
+		  "alt": "h3d"
 		},
-		title: 'Test2',
-		shortDescription: 'test description'
-	},
-	{
-		id:'iuhnflc52c45c6',
-		image: {
-			url:'faces.jpg',
-			alt:'faces'
-		},
-		title: 'Test',
-		shortDescription: 'test description'
-	},
-	{
-		id:'iuhnflc52c45c6',
-		image: {
-			url:'faces.jpg',
-			alt:'faces'
-		},
-		title: 'Test2',
-		shortDescription: 'test description'
-	},
-	{
-		id:'iuhnflc52c45c6',
-		image: {
-			url:'faces.jpg',
-			alt:'faces'
-		},
-		title: 'Test',
-		shortDescription: 'test description'
-	},
-	{
-		id:'iuhnflc52c45c6',
-		image: {
-			url:'faces.jpg',
-			alt:'faces'
-		},
-		title: 'Test2',
-		shortDescription: 'test description'
-	},
-	{
-		id:'iuhnflc52c45c6',
-		image: {
-			url:'faces.jpg',
-			alt:'faces'
-		},
-		title: 'Test',
-		shortDescription: 'test description'
-	},
-	{
-		id:'iuhnflc52c45c6',
-		image: {
-			url:'faces.jpg',
-			alt:'faces'
-		},
-		title: 'Test2',
-		shortDescription: 'test description'
-	},
-	{
-		id:'iuhnflc52c45c6',
-		image: {
-			url:'faces.jpg',
-			alt:'faces'
-		},
-		title: 'Test',
-		shortDescription: 'test description'
-	},
-	{
-		id:'iuhnflc52c45c6',
-		image: {
-			url:'faces.jpg',
-			alt:'faces'
-		},
-		title: 'Test2',
-		shortDescription: 'test description'
+		"date": "2010",
+		"links": [],
+		"skills": ["test"],
+		"location": "Paris, France & Singapore",
+		"shortDescription": " Drones, Artificial Intelligence and Cleantech",
+		"role": "Sales & Marketing - Right Arm of the EMEA Director",
+		"description": "Covered several roles for the subsidiaries H3Zoom.AI (Artificial Intelligence for anomalies detection on infrastructures) and HES Energy Systems (Hydrogen Fuel Cells)."
 	}
-
 ]
 
 export const work = [
@@ -132,7 +78,7 @@ export const work = [
 	  },
 	  "date": "2010",
 	  "links": [],
-	  "skills": [],
+	  "skills": ["test"],
 	  "location": "Paris, France & Singapore",
 	  "shortDescription": " Drones, Artificial Intelligence and Cleantech",
 	  "role": "Sales & Marketing - Right Arm of the EMEA Director",
@@ -161,7 +107,7 @@ export const work = [
 	  },
 	  "date": "2010",
 	  "links": [],
-	  "skills": [],
+	  "skills": ["test"],
 	  "location": "Alghero, Italy",
 	  "shortDescription": " Typical Sardinian Cottage",
 	  "role": "Co-owner & Manager(Seasonal)",
@@ -179,7 +125,7 @@ export const work = [
 	  },
 	  "date": "2010",
 	  "links": [],
-	  "skills": [],
+	  "skills": ["test"],
 	  "location": "Alghero, Italy",
 	  "shortDescription": " Criminal Law and Civil Law",
 	  "role": "Trainee Lawyer",
@@ -196,7 +142,7 @@ export const work = [
 	  },
 	  "date": "2010",
 	  "links": [],
-	  "skills": [],
+	  "skills": ["test"],
 	  "location": "Nantes, France",
 	  "shortDescription": " International Business Law",
 	  "role": "Paralegal",
@@ -217,7 +163,7 @@ export const education = [
 	  },
 	  "date": "2010",
 	  "links": [],
-	  "skills": [],
+	  "skills": ["test"],
 	  "location": "Lyon, France",
 	  "shortDescription": "Specialised Master in International Business Strategy for Lawyers.",
 	  "tasks": [
@@ -233,7 +179,7 @@ export const education = [
 	  },
 	  "date": "2010",
 	  "links": [],
-	  "skills": [],
+	  "skills": ["test"],
 	  "location": "Shanghai, China",
 	  "shortDescription": "Campus Abroad «Doing Business in China».",
 	  "tasks": [
@@ -249,7 +195,7 @@ export const education = [
 	  },
 	  "date": "2010",
 	  "links": [],
-	  "skills": [],
+	  "skills": ["test"],
 	  "location": "Sassari, Italy",
 	  "shortDescription": "Law Master Degree – 110/110 cum laude.",
 	  "tasks": [
@@ -266,7 +212,7 @@ export const education = [
 	  },
 	  "date": "2010",
 	  "links": [],
-	  "skills": [],
+	  "skills": ["test"],
 	  "location": "Poitiers, France",
 	  "shortDescription": "Erasmus Year Abroad.",
 	  "tasks": [
@@ -282,7 +228,7 @@ export const education = [
 	  },
 	  "date": "2010",
 	  "links": [],
-	  "skills": [],
+	  "skills": ["test"],
 	  "location": "Alghero, Italy",
 	  "shortDescription": "Graduation score: 100/100 – Class representative for 2 years.",
 	  "tasks": []
