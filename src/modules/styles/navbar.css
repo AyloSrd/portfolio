@@ -7,6 +7,7 @@ nav {
 	left: 0;
 	display: grid;
 	background-color: var(--bkg);
+	z-index: 50;
 }
 
 nav > div.logo-container-nav {

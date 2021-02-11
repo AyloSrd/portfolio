@@ -36,6 +36,7 @@ input[type=range]::-moz-range-thumb {
 	height: var(--small-unit);
 	width: var(--small-unit);
 	border-radius: 50%;
+	border: none;
 	background: var(--secondary);
 	cursor: pointer;
 }
@@ -55,10 +56,12 @@ input[type=range]::-webkit-slider-runnable-track {
 	cursor: pointer;
 	background: var(--bkg-dark-mode-toggler);
 	border-radius: calc(var(--small-unit)/2);
+	box-shadow: var(--bkg-dark-mode-toggler-shadow)
 }
   
 input[type=range]:focus::-webkit-slider-runnable-track {
 	background: var(--bkg-dark-mode-toggler);
+	box-shadow: var(--bkg-dark-mode-toggler-shadow)
 }
   
 input[type=range]::-moz-range-track {
@@ -67,6 +70,7 @@ input[type=range]::-moz-range-track {
 	cursor: pointer;
 	background: var(--bkg-dark-mode-toggler);
 	border-radius: calc(var(--small-unit)/2);
+	box-shadow: var(--bkg-dark-mode-toggler-shadow)
 }
   
 input[type=range]::-ms-track {
@@ -80,14 +84,18 @@ input[type=range]::-ms-track {
 input[type=range]::-ms-fill-lower {
 	background: var(--bkg-dark-mode-toggler);
 	border-radius: calc(var(--small-unit)/2);
+	box-shadow: var(--bkg-dark-mode-toggler-shadow)
 }
 input[type=range]:focus::-ms-fill-lower {
 	background: var(--bkg-dark-mode-toggler);
+	box-shadow: var(--bkg-dark-mode-toggler-shadow)
 }
 input[type=range]::-ms-fill-upper {
 	background: var(--bkg-dark-mode-toggler);
 	border-radius: calc(var(--small-unit)/2);
+	box-shadow: var(--bkg-dark-mode-toggler-shadow)
 }
 input[type=range]:focus::-ms-fill-upper {
 	background: var(--bkg-dark-mode-toggler);
+	box-shadow: var(--bkg-dark-mode-toggler-shadow)
 }

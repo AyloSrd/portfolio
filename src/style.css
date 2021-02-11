@@ -2,9 +2,10 @@
 	--primary: #555;
 	--primary-important: #333;
 	--bkg: #fff;
-	--bkg-important: #fee;
+	--bkg-important: #aaa;
 	--secondary: #e74b4b;
-	--bkg-dark-mode-toggler: #fee;
+	--bkg-dark-mode-toggler: #ddd;
+	--bkg-dark-mode-toggler-shadow: none;
 	--standard-unit: 2.5rem;
 	--small-unit: 1rem;
 	--large-unit: 5rem;

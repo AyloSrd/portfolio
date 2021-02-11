@@ -1,0 +1,6 @@
+@media only screen and (max-device-width: 480px) {
+	main > section > :not(div.horizontal-scroll-container), 
+    div.horizontal-scroll-container {
+		padding-left: var(--small-unit) !important;
+	}
+}

@@ -1,3 +1,12 @@
+
+main > section {
+	position: relative;
+}
+
+main > section > :not(div.horizontal-scroll-container) {
+	padding-left: var(--standard-unit);
+}
+
 div.horizontal-scroll-container {
 	padding: var(--standard-unit) 0;
 	height: auto;
@@ -10,6 +19,7 @@ div.horizontal-scroll-container {
 	scroll-behavior: smooth;
 	-ms-overflow-style: none;  /* IE and Edge */
   	scrollbar-width: none;  /* Firefox */
+	padding-left: var(--standard-unit);
 }
 
 div.horizontal-scroll-container::-webkit-scrollbar {
@@ -17,24 +27,72 @@ div.horizontal-scroll-container::-webkit-scrollbar {
 }
 
 div.horizontal-scroll-container > article {
-	margin-right: var(--standard-unit);
+	margin-right: var(--small-unit);
+	position: relative;
 	display: grid;
-	grid-template-columns: auto auto;
-	background-color: var(--bkg-important);
+	height: auto;
+	width: auto;
+	grid-template-columns: calc(var(--large-unit)*3);
+	grid-template-rows: auto 1fr;
+	justify-items: center;
+	align-items: start;
 	cursor: pointer;
+	padding: 0 var(--small-unit);
+	border-radius: calc(var(--small-unit)*0.5);
+	border: 1px solid var(--bkg-important)
+}
+
+div.horizontal-scroll-container > article h3 {
+	text-align: center;
 }
 
 div.horizontal-scroll-container > article:last-child {
 	margin-right: 0;
-	border-right: solid var(--standard-unit) var(--bkg);
+}
+
+div.horizontal-scroll-container > article:last-child::after {
+	content: "";
+	height: 100%;
+	display: block;
+  	position: absolute;
+	top: 0;
+	right: calc(-1*var(--small-unit) - 1px);
+	border-right: var(--small-unit) solid var(--bkg);
 }
 
 div.horizontal-scroll-container > article > div.img-container {
-	height: 100px;
-	width: 100px;
+	height: var(--large-unit);
+	width: var(--large-unit);
+	border-radius: calc(var(--small-unit)/3);
+	overflow: hidden;
+	margin-top: var(--small-unit);
+	border: 1px solid var(--bkg-important)
 }
 
 div.horizontal-scroll-container > article > div.img-container >  img {
 	height: 100%;
 	width: auto;
+}
+
+div.horizontal-scroll-container > article > div.txt-container {
+	width: 100%;
+	display: inline-block;
+	max-width: 100%;
+	white-space: normal;
+	text-align: justify;
+}
+
+main > section > button.scroll-btn {
+	position: absolute;
+	top: calc(var(--small-unit)*12);
+	z-index: 10;
+	border-radius: 50%;
+	height: var(--standard-unit);
+	width: var(--standard-unit);
+	padding: 0;
+	border: 0;
+}
+
+main > section > button.scroll-btn.scroll-right {
+	right: 0;
 }

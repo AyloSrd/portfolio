@@ -5,9 +5,13 @@ const Article = article => {
 	<div class="img-container">
 		<img src="./src/assets/imgs/${image.url}" alt="${image.alt}">
 	</div>
-	<div>
+	<div class="txt-container">
 		<h3>${title}</h3>
-		<p>${shortDescription}</p>
+		<p>${	
+				article.role 
+				? article.role
+				: shortDescription
+		}</p>
 	</div>
 </article>
 	`

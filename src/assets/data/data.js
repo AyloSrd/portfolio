@@ -1,69 +1,114 @@
 export const skills = {
 	categories: ['Computer Skills', 'Business Skills', 'Soft Skills'],
-	computer: ['aws', 'css', 'deno', 'docker', 'face-api.js', 'git', 'github', 'heroku', 'html', 'javascript', 'mongoDB', 'noSQL', 'node.js', 'peerjs', 'react', 'socket.io', 'svelte', 'tensorflow.js', 'vercel', 'webRTC'],
-	business: ['sales', 'marketing', 'Google Ads', 'Google Analytics'],
+	computer: ['aws', 'chrome-extensions', 'chrome-store', 'codemirror', 'css', 'deno', 'docker', 'express.js', 'face-api.js', 'git', 'github', 'heroku', 'html', 'javascript', 'mongoDB', 'node.js', 'nodemailer', 'noSQL', 'peerjs', 'puppeteer', 'react', 'socket.io', 'svelte', 'tensorflow.js', 'vanilla', 'vercel', 'webRTC'],
+	business: ['business-acumen', 'seo', 'sales', 'marketing', 'Google Ads', 'Google Analytics'],
 	soft: ['teamworking', 'negotiation', 'storytelling', 'sleight-of-hand', 'stubborness', 'creativity', 'stress management', 'adaptability', 'problem-solving']
 }
 
 export const portfolio = [
 	{
-		"title": "H3 Dynamics",
-		"id": "portfolio-0.263740979412555457-H3 Dynamics",
+		"title": "this",
+		"id": "portfolio-0.05288982192490144-this",
 		"image": {
-		  "url": "faces.jpg",
-		  "alt": "h3d"
+		  "url": "this.jpg",
+		  "alt": "portfolio logo"
 		},
-		"date": "2010",
+		"date": "2021",
 		"links": [],
-		"skills": ["test"],
-		"location": "Paris, France & Singapore",
-		"shortDescription": " Drones, Artificial Intelligence and Cleantech",
-		"role": "Sales & Marketing - Right Arm of the EMEA Director",
+		"skills": ["creativity", "javascript", "vanilla", "github", "git", "css", "html"],
+		"location": "Lyon, France & Alghero, Italy",
+		"shortDescription": "The amazing portfolio web-app your are currently interacting with.",
+		"role": null,
 		"description": "Covered several roles for the subsidiaries H3Zoom.AI (Artificial Intelligence for anomalies detection on infrastructures) and HES Energy Systems (Hydrogen Fuel Cells)."
 	},
 	{
-		"title": "H3 Dynamics",
-		"id": "portfolio-0.26374097455521255537-H3 Dynamics",
+		"title": "Tinderize-offline",
+		"id": "portfolio-0.012172288259092445-this",
 		"image": {
-		  "url": "faces.jpg",
-		  "alt": "h3d"
+		  "url": "tinderize.jpg",
+		  "alt": "tinderize logo"
 		},
-		"date": "2010",
+		"date": "2021",
 		"links": [],
-		"skills": ["css", "deno"],
-		"location": "Paris, France & Singapore",
-		"shortDescription": " Drones, Artificial Intelligence and Cleantech",
-		"role": "Sales & Marketing - Right Arm of the EMEA Director",
+		"skills": ["face-api.js", "tensorflow.js", "svelte", "vercel", "git", "github"],
+		"location": "Lyon, France & Alghero, Italy",
+		"shortDescription": "A.I.-powered face-blurrer.",
+		"role": null,
 		"description": "Covered several roles for the subsidiaries H3Zoom.AI (Artificial Intelligence for anomalies detection on infrastructures) and HES Energy Systems (Hydrogen Fuel Cells)."
 	},
 	{
-		"title": "H3 Dynamics",
-		"id": "portfolio-0.6374097941255537-H3 Dynamics",
+		"title": "Alexa Rank API Simplifier",
+		"id": "portfolio-0.4541018031064097-this",
 		"image": {
-		  "url": "faces.jpg",
-		  "alt": "h3d"
+		  "url": "alexa-rank-api.jpg",
+		  "alt": "alexa-rank api logo"
 		},
-		"date": "2010",
+		"date": "2021",
 		"links": [],
-		"skills": ["test"],
+		"skills": ["express.js", "node.js", "heroku", "git", "github"],
+		"location": "Paris, France",
+		"shortDescription": "API to enable GET requests to AWIS-Alexa-rank from Salesforce Mulesoft API.",
+		"role": null,
+		"description": "Covered several roles for the subsidiaries H3Zoom.AI (Artificial Intelligence for anomalies detection on infrastructures) and HES Energy Systems (Hydrogen Fuel Cells)."
+	},
+	{
+		"title": "Cöde",
+		"id": "portfolio-0.5555406462258696-Cöde",
+		"image": {
+		  "url": "cooode.jpg",
+		  "alt": "cöde logo"
+		},
+		"date": "2020",
+		"links": [],
+		"skills": ["react", "css", "html", "express.js", "creativity", "github", "heroku", "git", "javascript", "socket.io", "mongoDB", "noSQL", "webRTC", "codemirror"],
+		"location": "Paris, France",
+		"shortDescription": "Interactive coding lessons platform",
+		"role": null,
+		"description": "Covered several roles for the subsidiaries H3Zoom.AI (Artificial Intelligence for anomalies detection on infrastructures) and HES Energy Systems (Hydrogen Fuel Cells)."
+	},
+	{
+		"title": "NASA Mission Control",
+		"id": "portfolio-0.23573363901619038-NASA",
+		"image": {
+		  "url": "spacex.jpg",
+		  "alt": "SpaceX rocket"
+		},
+		"date": "2020",
+		"links": [],
+		"skills": ["deno", "typescript", "html", "css", "javascript", "aws", "docker"],
 		"location": "Paris, France & Singapore",
 		"shortDescription": " Drones, Artificial Intelligence and Cleantech",
-		"role": "Sales & Marketing - Right Arm of the EMEA Director",
+		"role": null,
 		"description": "Covered several roles for the subsidiaries H3Zoom.AI (Artificial Intelligence for anomalies detection on infrastructures) and HES Energy Systems (Hydrogen Fuel Cells)."
 	},	
 	{
-		"title": "H3 Dynamics",
+		"title": "neofinance-c",
+		"id": "portfolio-0.5098299148641952-neofinance",
+		"image": {
+		  "url": "neofinance-c.jpg",
+		  "alt": "neofinance-c"
+		},
+		"date": "2020",
+		"links": [],
+		"skills": ["node", "nodemailer", "puppeteer", "business-acumen", "javascript"],
+		"location": "Paris, France & Singapore",
+		"shortDescription": "Script automating financial opportunities research.",
+		"role": null,
+		"description": "Script automating financial opportunities research on a p2p lending platform, with email notification."
+	},
+	{
+		"title": "È - maiuscola, accentata",
 		"id": "portfolio-0.26374041255537-H3 Dynamics",
 		"image": {
-		  "url": "faces.jpg",
-		  "alt": "h3d"
+		  "url": "è-accentata-maiuscola.jpg",
+		  "alt": "È accentata maiuscola"
 		},
-		"date": "2010",
+		"date": "2020",
 		"links": [],
-		"skills": ["css"],
+		"skills": ["chrome-store", "javascript", "chrome-extensions", "business-acumen", "seo"],
 		"location": "Paris, France & Singapore",
-		"shortDescription": " Drones, Artificial Intelligence and Cleantech",
-		"role": "Sales & Marketing - Right Arm of the EMEA Director",
+		"shortDescription": "Extension to simplify the life of Italian QWERTY keyboards users",
+		"role": null,
 		"description": "Covered several roles for the subsidiaries H3Zoom.AI (Artificial Intelligence for anomalies detection on infrastructures) and HES Energy Systems (Hydrogen Fuel Cells)."
 	}
 ]
@@ -81,7 +126,7 @@ export const work = [
 	  "skills": ["test"],
 	  "location": "Paris, France & Singapore",
 	  "shortDescription": " Drones, Artificial Intelligence and Cleantech",
-	  "role": "Sales & Marketing - Right Arm of the EMEA Director",
+	  "role": "Sales Executive & Marketing Lead",
 	  "tasks": [
 		"Covered several roles for the subsidiaries H3Zoom.AI (Artificial Intelligence for anomalies detection on infrastructures) and HES Energy Systems (Hydrogen Fuel Cells).",
 		"Initiated successful cold email campaign (25% conversion rate), obtaining a meeting with each and every one of the targeted companies (French top tier construction companies).",

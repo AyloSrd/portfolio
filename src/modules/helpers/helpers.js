@@ -4,6 +4,7 @@ export const changeMode = ({e, MODE_VARIABLES}) => {
 	: 'dark'
 	MODE_VARIABLES[mode].forEach(cssVar => {
 		document.documentElement.style.setProperty(...cssVar)
+		console.log(cssVar)
 	})
 	
 	document.querySelector('link[rel="shortcut icon"]').href = `src/assets/imgs/favicon-${mode}-mode.ico`;
@@ -23,9 +24,9 @@ export const handleCloseModal = ModalContainer => {
 	ModalContainer.innerHTML = ''
 }
 
-export const handleScrollLeft = e => e.target.nextElementSibling.nextElementSibling.scrollLeft -= 200
+export const handleScrollLeft = e => e.target.nextElementSibling.nextElementSibling.scrollLeft -= (window.innerWidth - 30)
 
-export const handleScrollRight = e => e.target.nextElementSibling.scrollLeft += 200
+export const handleScrollRight = e => e.target.nextElementSibling.scrollLeft += (window.innerWidth - 30)
 
 export const handleFilterSkills = (e, skills, cb) => {
 	const searchInput = e.target.value

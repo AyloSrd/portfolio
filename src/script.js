@@ -27,15 +27,17 @@ const MODE_VARIABLES = {
 		['--primary', '#ddd'],
 		['--bkg', '#333'],
 		['--bkg-important', '#555'],
-		['--bkg-dark-mode-toggler', '#a74949']
+		['--bkg-dark-mode-toggler', '#faa'],
+		['--bkg-dark-mode-toggler-shadow', '0 0 10px #e74b4b, 0 0 40px #e74b4b, 0 0 80px #e74b4b']
 
 	],
 	light: [
 		['--primary-important', '#333'],
 		['--primary', '#555'],
 		['--bkg', '#fff'],
-		['--bkg-important', '#fee'],
-		['--bkg-dark-mode-toggler', '#fee']
+		['--bkg-important', '#aaa'],
+		['--bkg-dark-mode-toggler', '#ddd'],
+		['--bkg-dark-mode-toggler-shadow', 'none']
 	]
 }
 
