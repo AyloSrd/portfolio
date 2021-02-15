@@ -42,9 +42,20 @@ section {
 	height: auto;
 }
 
+svg {
+	pointer-events: none;
+}
+
 .italic {
 	font-style: italic;
 }
 
+.underlined {
+	text-decoration: underline;
+	cursor: pointer;
+}
 
+.underlined:hover {
+	text-decoration-color: var(--secondary);
+}
 

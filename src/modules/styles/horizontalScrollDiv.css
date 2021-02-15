@@ -15,11 +15,14 @@ div.horizontal-scroll-container {
 	display: flex;
 	flex-direction: row;
 	overflow-x:scroll;
-	white-space: nowrap;
+	flex-wrap: nowrap;
+	/* white-space: nowrap; */
 	scroll-behavior: smooth;
 	-ms-overflow-style: none;  /* IE and Edge */
   	scrollbar-width: none;  /* Firefox */
 	padding-left: var(--standard-unit);
+	/* user-select: none; */
+	cursor: grab;
 }
 
 div.horizontal-scroll-container::-webkit-scrollbar {
@@ -36,7 +39,6 @@ div.horizontal-scroll-container > article {
 	grid-template-rows: auto 1fr;
 	justify-items: center;
 	align-items: start;
-	cursor: pointer;
 	padding: 0 var(--small-unit);
 	border-radius: calc(var(--small-unit)*0.5);
 	border: 1px solid var(--bkg-important)
@@ -44,6 +46,7 @@ div.horizontal-scroll-container > article {
 
 div.horizontal-scroll-container > article h3 {
 	text-align: center;
+	cursor: pointer;
 }
 
 div.horizontal-scroll-container > article:last-child {
@@ -95,4 +98,5 @@ main > section > button.scroll-btn {
 
 main > section > button.scroll-btn.scroll-right {
 	right: 0;
+	transform: rotate(180deg);
 }

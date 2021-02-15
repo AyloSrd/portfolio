@@ -99,12 +99,12 @@ AllSkillsZone.addEventListener('click', e => {
 
 document.querySelectorAll('div.horizontal-scroll-container').forEach(div => {
 	div.addEventListener('click', e => {
-		const isArticle = e.target.tagName.toLowerCase() === 'article' 
-			|| e.target.parentNode.tagName.toLowerCase() === 'article'
-			|| e.target.parentNode.parentNode.tagName.toLowerCase() === 'article'		
-		if (isArticle) {
-			let article = e.target
-			while(article.tagName.toLowerCase() !== 'article')	article = article.parentNode
+		// const isArticle = e.target.tagName.toLowerCase() === 'article' 
+		// 	|| e.target.parentNode.tagName.toLowerCase() === 'article'
+		// 	|| e.target.parentNode.parentNode.tagName.toLowerCase() === 'article'		
+		if (e.target.tagName.toLowerCase() === 'h3') {
+			let article = e.target.parentNode.parentNode
+			// while(article.tagName.toLowerCase() !== 'article')	article = article.parentNode
 			const { uniqueId } = article.dataset
 			const modelContent = findModalContentById(uniqueId, { portfolio, work, education })
 			handleOpenModal(ModalContainer, () => Modal(modelContent))

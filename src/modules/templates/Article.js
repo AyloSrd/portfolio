@@ -6,7 +6,7 @@ const Article = article => {
 		<img src="./src/assets/imgs/${image.url}" alt="${image.alt}">
 	</div>
 	<div class="txt-container">
-		<h3>${title}</h3>
+		<h3 class="underlined">${title}</h3>
 		<p>${	
 				article.role 
 				? article.role
