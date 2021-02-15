@@ -24,9 +24,12 @@ export const handleCloseModal = ModalContainer => {
 	ModalContainer.innerHTML = ''
 }
 
-export const handleScrollLeft = e => e.target.nextElementSibling.nextElementSibling.scrollLeft -= (window.innerWidth - 30)
+const convertRemToPixels = rem => rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
 
-export const handleScrollRight = e => e.target.nextElementSibling.scrollLeft += (window.innerWidth - 30)
+
+export const handleScrollLeft = e => e.target.nextElementSibling.nextElementSibling.scrollLeft -= (window.innerWidth - convertRemToPixels(2.5))
+
+export const handleScrollRight = e => e.target.nextElementSibling.scrollLeft += (window.innerWidth - convertRemToPixels(2.5))
 
 export const handleFilterSkills = (e, skills, cb) => {
 	const searchInput = e.target.value

@@ -1,6 +1,6 @@
 export const skills = {
 	categories: ['Computer Skills', 'Business Skills', 'Soft Skills'],
-	computer: ['aws', 'chrome-extensions', 'chrome-store', 'codemirror', 'css', 'deno', 'docker', 'express.js', 'face-api.js', 'git', 'github', 'heroku', 'html', 'javascript', 'mongoDB', 'node.js', 'nodemailer', 'noSQL', 'peerjs', 'puppeteer', 'react', 'socket.io', 'svelte', 'tensorflow.js', 'vanilla', 'vercel', 'webRTC'],
+	computer: ['aws', 'chrome-extensions', 'chrome-store', 'codemirror', 'css', 'deno', 'docker', 'express.js', 'face-api.js', 'git', 'github', 'heroku', 'html', 'javascript', 'mongoDB', 'node.js', 'nodemailer', 'noSQL', 'peerjs', 'puppeteer', 'react', 'redux', 'socket.io', 'svelte', 'tensorflow.js', 'vanilla', 'vercel', 'webRTC'],
 	business: ['business-acumen', 'seo', 'sales', 'marketing', 'Google Ads', 'Google Analytics'],
 	soft: ['teamworking', 'negotiation', 'storytelling', 'sleight-of-hand', 'stubborness', 'creativity', 'stress management', 'adaptability', 'problem-solving']
 }
@@ -77,10 +77,25 @@ export const portfolio = [
 		"links": [],
 		"skills": ["deno", "typescript", "html", "css", "javascript", "aws", "docker"],
 		"location": "Paris, France & Singapore",
-		"shortDescription": " Drones, Artificial Intelligence and Cleantech",
+		"shortDescription": "",
 		"role": null,
 		"description": "Covered several roles for the subsidiaries H3Zoom.AI (Artificial Intelligence for anomalies detection on infrastructures) and HES Energy Systems (Hydrogen Fuel Cells)."
-	},	
+	},
+	{
+		"title": "redux-starwars",
+		"id": "portfolio-0.7701651095791733-redux starwars",
+		"image": {
+		  "url": "spacex.jpg",
+		  "alt": "SpaceX rocket"
+		},
+		"date": "2020",
+		"links": [],
+		"skills": ["html", "css", "javascript", "react", "redux"],
+		"location": "Paris, France",
+		"shortDescription": "Redux-based app that sorts Star Wars episodes.",
+		"role": null,
+		"description": "Having trouble with ordering the Star Wars first and second trilogy by date of release or episode number? redux-starwrs does it for you!\nSmall app to test redux, makes use of redux-thunk to deal with API calls (fetch)"
+	},		
 	{
 		"title": "neofinance-c",
 		"id": "portfolio-0.5098299148641952-neofinance",
@@ -91,10 +106,10 @@ export const portfolio = [
 		"date": "2020",
 		"links": [],
 		"skills": ["node", "nodemailer", "puppeteer", "business-acumen", "javascript"],
-		"location": "Paris, France & Singapore",
+		"location": "Paris, France",
 		"shortDescription": "Script automating financial opportunities research.",
 		"role": null,
-		"description": "Script automating financial opportunities research on a p2p lending platform, with email notification."
+		"description": "Automating search for financial opportunities on a p2p lending platform, with email notification.\n	The bot checks every 5 minutes the investments page and identifies new investment opportunities, based on fixed creteria, before they are gone. The user, Mr. C., is notified via email any time a new opportunity arises, with a 5 minutes max delay.\nStack: -node -puppeteer -nodemailer -cron."
 	},
 	{
 		"title": "È - maiuscola, accentata",
