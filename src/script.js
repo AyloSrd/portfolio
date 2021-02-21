@@ -97,6 +97,10 @@ AllSkillsZone.addEventListener('click', e => {
 	EducationScroll.innerHTML = filteredArticles.education ? ArticlesContainer(filteredArticles.education) : ''
 })
 
+FoundSkillsZone.addEventListener('click', () => {
+	console.log('clicked')
+})
+
 document.querySelectorAll('div.horizontal-scroll-container').forEach(div => {
 	div.addEventListener('click', e => {
 		// const isArticle = e.target.tagName.toLowerCase() === 'article' 
