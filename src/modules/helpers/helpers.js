@@ -61,8 +61,6 @@ export const filterArticlesBySkills = (foundSkills, articles) => {
 }
 
 export const deleteItem = ( arr, item ) => {
-	const index = array.indexOf(item);
-	if (index > -1) {
-	arr.splice(index, 1);
-	}
+	const index = array.indexOf(item)
+	if (index > -1) arr.splice(index, 1)
 }
