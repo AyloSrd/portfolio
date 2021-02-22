@@ -3,6 +3,8 @@ span.skill-tag {
 	border-radius: calc(var(--small-unit)/5);
 	padding: calc(var(--small-unit)/3);
 	margin: calc(var(--small-unit)/5);
+	position: relative;
+	/* overflow: hidden; */
 }
 
 span.skill-tag.listed-skill {
@@ -17,4 +19,31 @@ span.skill-tag.researched-skill {
 	color: var(--secondary);
 	font-size: 0.8rem;
 	font-weight: 700;
-}
+	transition: color 0.4s ease-in-out;
+  }
+  
+  span.skill-tag.researched-skill::before {
+	content: 'x';
+	display: grid;
+	place-content: center;
+	color: var(--bkg);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	height: 100%;
+	background-color:var(--secondary);
+	transform-origin: center;
+	transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+	transition: transform 0.25s ease-in-out;
+  }
+  
+  span.skill-tag.researched-skill:hover {
+	cursor: pointer;
+	color: #161616;
+  }
+  
+  span.skill-tag.researched-skill:hover::before {
+	transform: translate3d(-50%, -50%, 0) scale3d(1, 1, 1);
+  }
+  
