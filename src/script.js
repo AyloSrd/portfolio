@@ -13,7 +13,8 @@ import {
 	handleScrollRight,
 	handleFilterSkills,
 	handleOnSearch,
-	filterArticlesBySkills
+	filterArticlesBySkills,
+	deleteItem
 } from './modules/helpers/helpers.js'
 import Modal  from './modules/templates/Modal.js'
 import AllSkills  from './modules/templates/AllSkills.js'
@@ -97,8 +98,12 @@ AllSkillsZone.addEventListener('click', e => {
 	EducationScroll.innerHTML = filteredArticles.education ? ArticlesContainer(filteredArticles.education) : ''
 })
 
-FoundSkillsZone.addEventListener('click', () => {
-	console.log('clicked')
+FoundSkillsZone.addEventListener('click', e => {
+	if(e.target.tagName.toLowerCase() === 'span') {
+		const item = e.target.innerHTML.trim()
+		deleteItem(foundSkills, item)
+		FoundSkillsZone.innerHTML = SkillTagsList({ title: null, skills: foundSkills})
+	}
 })
 
 document.querySelectorAll('div.horizontal-scroll-container').forEach(div => {
