@@ -103,6 +103,12 @@ FoundSkillsZone.addEventListener('click', e => {
 		const item = e.target.innerHTML.trim()
 		deleteItem(foundSkills, item)
 		FoundSkillsZone.innerHTML = SkillTagsList({ title: null, skills: foundSkills})
+		SearchInput.value = ''
+		SearchInput.dispatchEvent(new Event('input'))
+		const filteredArticles = filterArticlesBySkills(foundSkills, { portfolio, work, education})
+		PortfolioScroll.innerHTML = filteredArticles.portfolio ? ArticlesContainer(filteredArticles.portfolio) : ''
+		WorkScroll.innerHTML = filteredArticles.work ? ArticlesContainer(filteredArticles.work) : ''
+		EducationScroll.innerHTML = filteredArticles.education ? ArticlesContainer(filteredArticles.education) : ''
 	}
 })
 
