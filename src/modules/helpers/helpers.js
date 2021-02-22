@@ -59,3 +59,10 @@ export const filterArticlesBySkills = (foundSkills, articles) => {
 	}
 	return newArticles
 }
+
+export const deleteItem = ( arr, item ) => {
+	const index = array.indexOf(item);
+	if (index > -1) {
+	arr.splice(index, 1);
+	}
+}
