@@ -25,3 +25,25 @@ nav div#all-skills-zone {
 	overflow: hidden;
 	transition: max-height 0.25s ease-in;
 }
+
+nav div#toggle-all-skills-zone button#toggle-all-skills-btn {
+	height: var(--small-unit);
+	width: var(--small-unit);
+	border: none;
+	border-radius: 50%;
+	padding: 0;
+
+}
+
+nav div#toggle-all-skills-zone button#toggle-all-skills-btn svg {
+	transform: rotate(-90deg);
+	transition: transform 0.25s ease-in-out;
+}
+
+nav div#toggle-all-skills-zone button#toggle-all-skills-btn.down svg {
+	transform: rotate(-90deg);
+}
+
+nav div#toggle-all-skills-zone button#toggle-all-skills-btn.up svg {
+	transform: rotate(90deg);
+}

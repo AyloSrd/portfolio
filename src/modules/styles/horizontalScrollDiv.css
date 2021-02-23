@@ -10,11 +10,12 @@ main > section > :not(div.horizontal-scroll-container) {
 div.horizontal-scroll-container {
 	padding: var(--standard-unit) 0;
 	height: auto;
+	min-height: calc(var(--small-unit)*20);
 	width: 100vw;
 	max-width: 100%;
 	display: flex;
 	flex-direction: row;
-	overflow-x:scroll;
+	overflow-x: scroll;
 	flex-wrap: nowrap;
 	/* white-space: nowrap; */
 	scroll-behavior: smooth;

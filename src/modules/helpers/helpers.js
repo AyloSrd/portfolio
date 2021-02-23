@@ -1,11 +1,9 @@
 export const changeMode = ({e, MODE_VARIABLES}) => {
 	const mode = e.target.value === '0' 
-	? 'light' 
-	: 'dark'
-	MODE_VARIABLES[mode].forEach(cssVar => {
-		document.documentElement.style.setProperty(...cssVar)
-		console.log(cssVar)
-	})
+		? 'light' 
+		: 'dark'
+	
+	MODE_VARIABLES[mode].forEach(cssVar => document.documentElement.style.setProperty(...cssVar))
 	
 	document.querySelector('link[rel="shortcut icon"]').href = `src/assets/imgs/favicon-${mode}-mode.ico`;
 	document.querySelector('link[rel="icon"]').href = `src/assets/imgs/favicon-${mode}-mode.ico`;
@@ -63,4 +61,15 @@ export const filterArticlesBySkills = (foundSkills, articles) => {
 export const deleteItem = ( arr, item ) => {
 	const index = arr.indexOf(item)
 	if (index > -1) arr.splice(index, 1)
+}
+
+export const toggleAllSkillsZone = (ToggleAllSkillsBtn, AllSkillsZone) => {
+	if (ToggleAllSkillsBtn.className === 'up') {
+		ToggleAllSkillsBtn.className = 'down'
+		AllSkillsZone.style.maxHeight = '0px'
+	}else{
+		ToggleAllSkillsBtn.className = 'up'
+		AllSkillsZone.style.maxHeight = '500px'
+	}
+	console.log(ToggleAllSkillsBtn.className)
 }

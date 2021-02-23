@@ -14,7 +14,8 @@ import {
 	handleFilterSkills,
 	handleOnSearch,
 	filterArticlesBySkills,
-	deleteItem
+	deleteItem,
+	toggleAllSkillsZone
 } from './modules/helpers/helpers.js'
 import Modal  from './modules/templates/Modal.js'
 import AllSkills  from './modules/templates/AllSkills.js'
@@ -51,6 +52,7 @@ const WorkScroll = document.getElementById('work-scroll')
 const EducationScroll = document.getElementById('education-scroll')
 const AllSkillsZone = document.getElementById('all-skills-zone')
 const FoundSkillsZone = document.getElementById('found-skills-zone')
+const ToggleAllSkillsBtn = document.getElementById('toggle-all-skills-btn')
 const SearchForm = document.getElementById('search-form')
 const SearchInput = document.getElementById('search-input')
 
@@ -66,6 +68,7 @@ PortfolioScroll.innerHTML = ArticlesContainer(portfolio)
 WorkScroll.innerHTML = ArticlesContainer(work)
 EducationScroll.innerHTML = ArticlesContainer(education)
 
+ToggleAllSkillsBtn.addEventListener('click', () => toggleAllSkillsZone(ToggleAllSkillsBtn, AllSkillsZone))
 AllSkillsZone.innerHTML = AllSkills(skills)
 
 SearchForm.addEventListener('submit', e => {
@@ -85,7 +88,10 @@ SearchForm.addEventListener('search', e => handleOnSearch(e, skills, correspondi
 }))
 
 SearchInput.addEventListener('input', e => handleFilterSkills(e, skills, correspondingSkills => AllSkillsZone.innerHTML = AllSkills(correspondingSkills)))
-SearchInput.addEventListener('focus', () => AllSkillsZone.style.maxHeight = '500px')
+SearchInput.addEventListener('focus', () => {
+	ToggleAllSkillsBtn.className = 'up'
+	AllSkillsZone.style.maxHeight = '500px'
+})
 
 AllSkillsZone.addEventListener('click', e => {
 	if (e.target.classList.contains('listed-skill') && foundSkills.length < 3 && !foundSkills.includes(e.target.innerHTML.trim())) foundSkills.push(e.target.innerHTML.trim())
