@@ -8,7 +8,7 @@ section#modal-container {
 	max-width: 100%;
 	display: grid;
 	place-items: center;
-	background: rgba( 255, 255, 255, 0.25 );
+	background: rgba( 100, 100, 100, 0.25 );
 	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 	backdrop-filter: blur( 15.0px );
 	-webkit-backdrop-filter: blur( 15.0px );
@@ -17,4 +17,7 @@ section#modal-container {
 
 section#modal-container div.modal {
 	background-color: var(--bkg);
+	height: 80vh;
+	width: 33vw;
+	overflow-y: auto;
 }

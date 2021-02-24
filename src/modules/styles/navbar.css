@@ -6,7 +6,10 @@ nav {
 	top: 0;
 	left: 0;
 	display: grid;
-	background-color: var(--bkg);
+	/* background-color: var(--bkg); */
+	/* background-color: rgba( 255, 255, 255, 0.25 ); */
+	backdrop-filter: blur( 15.0px );
+	-webkit-backdrop-filter: blur( 15.0px );
 	z-index: 50;
 }
 
