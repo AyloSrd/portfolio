@@ -4,7 +4,7 @@ span.skill-tag {
 	padding: calc(var(--small-unit)/3);
 	margin: calc(var(--small-unit)/5);
 	position: relative;
-	/* overflow: hidden; */
+	overflow: hidden;
 }
 
 span.skill-tag.listed-skill {
@@ -20,60 +20,60 @@ span.skill-tag.researched-skill {
 	font-size: 0.8rem;
 	font-weight: 700;
 	transition: color 0.4s ease-in-out;
-	padding-right: var(--small-unit);
 	position: relative;
 }
   
-span.skill-tag.researched-skill::before {
-	content: 'x';
-	display: grid;
-	place-content: center;
-	color: var(--bkg);
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 110%;
-	height: 110%;
-	background-color:var(--secondary);
-	transform-origin: center;
-	transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
-	transition: transform 0.25s ease-in-out;
-}
-  
-span.skill-tag.researched-skill:hover {
-	cursor: pointer;
-	color: #161616;
-}
-  
-span.skill-tag.researched-skill:hover::before {
-	transform: translate3d(-50%, -50%, 0) scale3d(1, 1, 1);
-}
 
 span.skill-tag.researched-skill span.remove-researched-skill {
-	display: inline-block;
-	text-align: center;
-	vertical-align: middle;
-	padding: 0;
-	line-height: calc(var(--small-unit)*1.5);
-	width: calc(var(--small-unit)*1.5);
-	height: calc(var(--small-unit)*1.5);
-	background-color: var(--secondary);
-	border-radius: 50%;
-	color: var(--bkg);
-	position: absolute;
-	right: calc(var(--small-unit)*-0.85);
-	top: 0;
+	display: none;
+}
+
+@media only screen and (min-device-width: 481px) {
+	span.skill-tag.researched-skill::before {
+		content: 'x';
+		display: grid;
+		place-content: center;
+		color: var(--bkg);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 110%;
+		height: 110%;
+		background-color:var(--secondary);
+		transform-origin: center;
+		transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+		transition: transform 0.25s ease-in-out;
+	}
+	  
+	span.skill-tag.researched-skill:hover {
+		cursor: pointer;
+	}
+	  
+	span.skill-tag.researched-skill:hover::before {
+		transform: translate3d(-50%, -50%, 0) scale3d(1, 1, 1);
+	}	
 }
 
 @media only screen and (max-device-width: 480px) {
+	span.skill-tag {	
+		padding-right: var(--small-unit);
+		overflow: visible;
+	}
+
 	span.skill-tag.researched-skill span.remove-researched-skill {
-		width: calc(var(--small-unit)*1.25);
-		height: calc(var(--small-unit)*1.25);
+		display: inline-block;
+		text-align: center;
+		vertical-align: middle;
+		padding: 0;
+		line-height: calc(var(--small-unit)*1.5);
+		width: calc(var(--small-unit)*1.5);
+		height: calc(var(--small-unit)*1.5);
 		background-color: var(--secondary);
 		border-radius: 50%;
 		color: var(--bkg);
 		position: absolute;
-		right: calc(var(--small-unit)*-1);
+		right: calc(var(--small-unit)*-0.85);
+		top: 0;
 	}
 }
 
