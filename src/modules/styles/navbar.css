@@ -64,9 +64,3 @@ nav div#toggle-all-skills-zone button#toggle-all-skills-btn.down svg {
 nav div#toggle-all-skills-zone button#toggle-all-skills-btn.up svg {
 	transform: rotate(90deg);
 }
-
-	
-	.div1 { grid-area: 1 / 2 / 2 / 3; }
-	.div2 { grid-area: 1 / 3 / 2 / 4; }
-	.div3 { grid-area: 3 / 1 / 4 / 5; }
-	.div4 { grid-area: 2 / 1 / 3 / 5; }

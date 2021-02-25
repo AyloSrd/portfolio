@@ -30,7 +30,7 @@ export const handleScrollLeft = e => e.target.nextElementSibling.nextElementSibl
 export const handleScrollRight = e => e.target.nextElementSibling.scrollLeft += (window.innerWidth - convertRemToPixels(2.5))
 
 export const handleFilterSkills = (e, skills, cb) => {
-	const searchInput = e.target.value
+	const searchInput = e.target.value.toLowerCase()
 	const correspondingSkills = { categories: skills.categories }
 
 	skills.categories
