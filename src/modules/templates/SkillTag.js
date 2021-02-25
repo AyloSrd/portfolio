@@ -1,6 +1,7 @@
 const SkillTag = ({ skill, researchedSkill }) => {
 	const template = `
 	<span
+		data-skill="${skill}"
 		class="skill-tag${ 
 			researchedSkill 
 			? ' researched-skill'
@@ -8,6 +9,10 @@ const SkillTag = ({ skill, researchedSkill }) => {
 		}"
 	>
 		${skill}
+		${ researchedSkill 
+			? `<span data-skill="${skill}" class="remove-researched-skill">x</span>`
+			: ''
+		}
 	</span>
 	`
 	return template

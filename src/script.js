@@ -106,7 +106,7 @@ AllSkillsZone.addEventListener('click', e => {
 
 FoundSkillsZone.addEventListener('click', e => {
 	if(e.target.tagName.toLowerCase() === 'span') {
-		const item = e.target.innerHTML.trim()
+		const item = e.target.dataset.skill
 		deleteItem(foundSkills, item)
 		FoundSkillsZone.innerHTML = SkillTagsList({ title: null, skills: foundSkills})
 		SearchInput.value = ''
