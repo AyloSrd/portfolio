@@ -41,11 +41,14 @@ nav div#all-skills-zone {
 
 nav div#toggle-all-skills-zone {
 	grid-area: 3 / 1 / 4 / 5;
+	display: grid;
+	place-items: center;
+	padding: var(--small-unit) 0;
 }
 
 nav div#toggle-all-skills-zone button#toggle-all-skills-btn {
-	height: var(--small-unit);
-	width: var(--small-unit);
+	height: calc(var(--small-unit)*1.5);
+	width: calc(var(--small-unit)*1.5);
 	border: none;
 	border-radius: 50%;
 	padding: 0;
