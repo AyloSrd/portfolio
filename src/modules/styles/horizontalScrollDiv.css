@@ -70,7 +70,7 @@ div.horizontal-scroll-container > article > div.img-container {
 	border-radius: calc(var(--small-unit)/3);
 	overflow: hidden;
 	margin-top: var(--small-unit);
-	border: 1px solid var(--bkg-important)
+	border: 1px solid var(--bkg-important);
 }
 
 div.horizontal-scroll-container > article > div.img-container >  img {

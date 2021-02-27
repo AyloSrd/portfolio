@@ -6,6 +6,7 @@ nav {
 	top: 0;
 	left: 0;
 	display: grid;
+	padding: var(--standard-unit) var(--standard-unit) 0 var(--standard-unit);
 	/* background-color: var(--bkg); */
 	/* background-color: rgba( 255, 255, 255, 0.25 ); */
 	grid-template-columns: 1fr auto auto 1fr;
@@ -29,6 +30,30 @@ nav > div.logo-container-nav > img {
 
 nav > div#search-zone {
 	grid-area: 1 / 3 / 2 / 4;
+	height: 100%;
+	width: 300px;
+	max-width: 100%;
+	border: none;
+	border-bottom: 1px solid var(--bkg-important);
+}
+
+nav > div#search-zone form {
+	height: 100%;
+	width: 100%;
+}
+
+nav > div#search-zone form input {
+	border: none;
+	background-color: transparent;
+	color:var(--primary);
+	font-size: 1.17rem;
+	padding: 0 var(--small-unit);
+	height: 100%;
+	width: 100%;
+}
+
+nav > div#search-zone form input:focus {
+	outline: transparent;
 }
 
 nav div#all-skills-zone {
@@ -52,7 +77,6 @@ nav div#toggle-all-skills-zone button#toggle-all-skills-btn {
 	border: none;
 	border-radius: 50%;
 	padding: 0;
-
 }
 
 nav div#toggle-all-skills-zone button#toggle-all-skills-btn svg {

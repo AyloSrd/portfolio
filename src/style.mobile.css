@@ -3,4 +3,8 @@
     div.horizontal-scroll-container {
 		padding-left: var(--small-unit) !important;
 	}
+
+	nav {
+		padding: var(--standard-unit) var(--small-unit) 0 var(--small-unit) !important;
+	}
 }

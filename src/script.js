@@ -76,7 +76,7 @@ SearchForm.addEventListener('submit', e => {
 })
 SearchForm.addEventListener('search', e => handleOnSearch(e, skills, correspondingSkill => {
 	if ( foundSkills.length < 3 && !foundSkills.includes(correspondingSkill) ) {
-		foundSkills.push(correspondingSkill)
+		if (correspondingSkill !== undefined) foundSkills.push(correspondingSkill)
 		FoundSkillsZone.innerHTML = SkillTagsList({ title: null, skills: foundSkills})
 		const filteredArticles = filterArticlesBySkills(foundSkills, { portfolio, work, education})
 		PortfolioScroll.innerHTML = filteredArticles.portfolio ? ArticlesContainer(filteredArticles.portfolio) : ''
