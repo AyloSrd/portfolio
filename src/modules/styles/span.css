@@ -54,27 +54,5 @@ span.skill-tag.researched-skill span.remove-researched-skill {
 	}	
 }
 
-@media only screen and (max-device-width: 480px) {
-	span.skill-tag {	
-		padding-right: var(--small-unit);
-		overflow: visible;
-	}
-
-	span.skill-tag.researched-skill span.remove-researched-skill {
-		display: inline-block;
-		text-align: center;
-		vertical-align: middle;
-		padding: 0;
-		line-height: calc(var(--small-unit)*1.5);
-		width: calc(var(--small-unit)*1.5);
-		height: calc(var(--small-unit)*1.5);
-		background-color: var(--secondary);
-		border-radius: 50%;
-		color: var(--bkg);
-		position: absolute;
-		right: calc(var(--small-unit)*-0.85);
-		top: 0;
-	}
-}
 
 

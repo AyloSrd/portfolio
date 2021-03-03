@@ -32,6 +32,10 @@ h6 {
 	color: var(--primary-important)
 }
 
+h1 {
+	font-size: 2.25rem;
+}
+
 p {
 	color: var(--primary)
 }

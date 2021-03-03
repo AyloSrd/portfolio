@@ -1,0 +1,39 @@
+header {
+    padding: var(--standard-unit);
+}
+
+header > section.dark-mode-section { 
+    height: auto;
+    width: 100vw;
+    max-width: 100%;
+}
+
+header > section.dark-mode-section > form {
+    display: block;
+    margin: 0 0 0 auto;
+    width: 80px;
+}
+
+header > section.dark-mode-section > form > label {
+    margin-top: var(--small-unit);
+}
+
+header > section.title { 
+    grid-area: 1 / 1 / 2 / 4; 
+    text-align: center;
+    display: grid;
+    place-content: center;
+}
+
+header > section.title > div.title-wrapper { 
+   max-width: 450px;
+}
+
+header > section.title >div.title-wrapper > p { 
+    font-size: 1.125rem;
+    margin: 0;
+ }
+ 
+header > section.title >div.title-wrapper > h1 { 
+    margin-bottom: var(--small-unit);
+}

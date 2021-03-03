@@ -14,12 +14,13 @@
 		<link rel="icon" href="src/assets/imgs/favicon-light-mode.ico" type="image/x-icon">
 		<link rel="stylesheet" href="./src/assets/fonts/fonts.css">
 		<link rel="stylesheet" href="./src/style.css">
-		<link rel="stylesheet" href="./src/style.mobile.css">
 		<link rel="stylesheet" href="./src/modules/styles/navbar.css">
+		<link rel="stylesheet" href="./src/modules/styles/header.css">
 		<link rel="stylesheet" href="./src/modules/styles/horizontalScrollDiv.css">
 		<link rel="stylesheet" href="./src/modules/styles/input.css">
 		<link rel="stylesheet" href="./src/modules/styles/modal.css">
 		<link rel="stylesheet" href="./src/modules/styles/span.css">
+		<link rel="stylesheet" href="./src/style.mobile.css">
 		<script src="./src/assets/data/data.js" type='module' defer></script>
 		<script src="src/modules/helpers/helpers.js" type="module" defer></script>
 		<script src="./src/modules/templates/SkillTag.js" type='module' defer></script>
@@ -78,15 +79,26 @@
 		</div>
 		</nav>
 		<header>
-			<h1>Full-stack JavaScript Developer</h1>
-			<input 
-				type="range" 
-				id="dark-mode-btn" 
-				name="dark-mode-btn" 
-				min="0" 
-				max="1"
-				value="0"
-			>
+			<section class="dark-mode-section">
+				<form>
+					<input 
+						type="range" 
+						id="dark-mode-btn" 
+						name="dark-mode-btn" 
+						min="0" 
+						max="1"
+						value="0"
+					>
+					<br>
+					<label for="dark-mode-btn">Dark mode</label>
+				</form>
+			</section>
+			<section class="title"> 
+				<div class="title-wrapper">
+					<h1>Looking for a Full-stack JavaScript Developer ?</h1>
+					<p>Browse the projects and experience by skill, through the search bar or button above, or simply check them below</p>
+				</div>
+			</section>
 		</header>
 		<main>
 			<section>
