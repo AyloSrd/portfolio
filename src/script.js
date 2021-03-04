@@ -55,6 +55,7 @@ const FoundSkillsZone = document.getElementById('found-skills-zone')
 const ToggleAllSkillsBtn = document.getElementById('toggle-all-skills-btn')
 const SearchForm = document.getElementById('search-form')
 const SearchInput = document.getElementById('search-input')
+const Header = document.querySelector('header')
 
 
 /* DOM MANIPULATION */
@@ -84,7 +85,7 @@ SearchForm.addEventListener('search', e => handleOnSearch(e, skills, correspondi
 		EducationScroll.innerHTML = filteredArticles.education ? ArticlesContainer(filteredArticles.education) : ''
 		SearchInput.value = ''
 		SearchInput.dispatchEvent(new Event('input'))
-		PortfolioScroll.scrollIntoView()
+		Header.scrollIntoView()
 	}
 }))
 
@@ -103,7 +104,7 @@ AllSkillsZone.addEventListener('click', e => {
 	PortfolioScroll.innerHTML = filteredArticles.portfolio ? ArticlesContainer(filteredArticles.portfolio) : ''
 	WorkScroll.innerHTML = filteredArticles.work ? ArticlesContainer(filteredArticles.work) : ''
 	EducationScroll.innerHTML = filteredArticles.education ? ArticlesContainer(filteredArticles.education) : ''
-	PortfolioScroll.scrollIntoView()
+	Header.scrollIntoView()
 })
 
 FoundSkillsZone.addEventListener('click', e => {
@@ -117,7 +118,7 @@ FoundSkillsZone.addEventListener('click', e => {
 		PortfolioScroll.innerHTML = filteredArticles.portfolio ? ArticlesContainer(filteredArticles.portfolio) : ''
 		WorkScroll.innerHTML = filteredArticles.work ? ArticlesContainer(filteredArticles.work) : ''
 		EducationScroll.innerHTML = filteredArticles.education ? ArticlesContainer(filteredArticles.education) : ''
-		PortfolioScroll.scrollIntoView()
+		Header.scrollIntoView()
 	}
 })
 
