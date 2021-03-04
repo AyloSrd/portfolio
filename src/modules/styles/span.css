@@ -5,6 +5,7 @@ span.skill-tag {
 	margin: calc(var(--small-unit)/5);
 	position: relative;
 	overflow: hidden;
+	cursor: pointer;
 }
 
 span.skill-tag.listed-skill {

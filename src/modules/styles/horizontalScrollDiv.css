@@ -23,7 +23,7 @@ div.horizontal-scroll-container {
   	scrollbar-width: none;  /* Firefox */
 	padding-left: var(--standard-unit);
 	/* user-select: none; */
-	cursor: grab;
+	cursor:context-menu;
 }
 
 div.horizontal-scroll-container::-webkit-scrollbar {
@@ -47,6 +47,10 @@ div.horizontal-scroll-container > article {
 
 div.horizontal-scroll-container > article h3 {
 	text-align: center;
+	cursor: pointer;
+}
+
+div.horizontal-scroll-container > article img {
 	cursor: pointer;
 }
 

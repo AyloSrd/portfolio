@@ -123,7 +123,7 @@ document.querySelectorAll('div.horizontal-scroll-container').forEach(div => {
 		// const isArticle = e.target.tagName.toLowerCase() === 'article' 
 		// 	|| e.target.parentNode.tagName.toLowerCase() === 'article'
 		// 	|| e.target.parentNode.parentNode.tagName.toLowerCase() === 'article'		
-		if (e.target.tagName.toLowerCase() === 'h3') {
+		if (e.target.tagName.toLowerCase() === 'h3' || e.target.tagName.toLowerCase() === 'img') {
 			let article = e.target.parentNode.parentNode
 			// while(article.tagName.toLowerCase() !== 'article')	article = article.parentNode
 			const { uniqueId } = article.dataset

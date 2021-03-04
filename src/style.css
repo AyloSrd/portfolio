@@ -57,6 +57,16 @@ button {
 	cursor: pointer;
 }
 
+a {
+	text-decoration: underline;
+	text-decoration-color: var(--secondary);
+	cursor: pointer;
+}
+
+a:visited {
+	color: var(--primary-important);
+}
+
 .italic {
 	font-style: italic;
 }

@@ -1,5 +1,5 @@
 header {
-    padding: var(--standard-unit);
+    padding: var(--standard-unit) var(--standard-unit) var(--large-unit);
 }
 
 header > section.dark-mode-section { 

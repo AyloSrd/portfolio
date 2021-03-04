@@ -13,11 +13,23 @@ section#modal-container {
 	backdrop-filter: blur( 15.0px );
 	-webkit-backdrop-filter: blur( 15.0px );
 	z-index: 500;
+	padding: var(--large-unit);
 }
 
 section#modal-container div.modal {
 	background-color: var(--bkg);
-	height: 80vh;
-	width: 33vw;
+	height: 100%;
+	width: 100%;
 	overflow-y: auto;
+	padding: var(--small-unit);
+}
+
+section#modal-container div.links-container {
+	display: flex;
+
+}
+
+section#modal-container div.link-btn {
+	height: var(--standard-unit);
+	width: var(--standard-unit);
 }

@@ -1,4 +1,5 @@
 import SkillTagsList from './SkillTagsList.js'
+import LinkIcon from './LinkIcon.js'
 
 const Modal = obj => {
 	const template = `
@@ -47,6 +48,27 @@ const Modal = obj => {
                         obj.tasks.map(task => `<li>${task}</li>`).join('\n')
                     }
                     </ul>
+                </div>
+                `
+                : ''
+        }
+        ${
+            obj.links
+                ? `
+                <div id="modal-body-links">
+                    <h3>Links</h3>
+                    <div class="links-container">
+                    ${
+                        obj.links.map(link => `
+                        <div 
+                            class="link-btn"
+                            style="cursor: pointer;" 
+                            onclick="window.open('${link}')"
+                        >
+                            ${LinkIcon(link)}
+                        </div>`).join('\n')
+                    }
+                    </div>
                 </div>
                 `
                 : ''

@@ -7,10 +7,8 @@ nav {
 	left: 0;
 	display: grid;
 	padding: var(--standard-unit) var(--standard-unit) 0 var(--standard-unit);
-	/* background-color: var(--bkg); */
-	/* background-color: rgba( 255, 255, 255, 0.25 ); */
 	grid-template-columns: 1fr auto auto 1fr;
-	grid-template-rows: repeat(3, auto);
+	grid-template-rows: repeat(4, auto);
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 	backdrop-filter: blur( 15.0px );
@@ -56,8 +54,16 @@ nav > div#search-zone form input:focus {
 	outline: transparent;
 }
 
-nav div#all-skills-zone {
+nav div#found-skills-zone {
 	grid-area: 2 / 1 / 3 / 5;
+}
+
+nav div#found-skills-zone div.skill-list{
+	padding: var(--small-unit) var(--small-unit) 0;
+}
+
+nav div#all-skills-zone {
+	grid-area: 3 / 1 / 4 / 5;
 	height: 'auto';
 	max-height: 0;
 	overflow: hidden;
@@ -65,7 +71,7 @@ nav div#all-skills-zone {
 }
 
 nav div#toggle-all-skills-zone {
-	grid-area: 3 / 1 / 4 / 5;
+	grid-area: 4 / 1 / 5 / 5;
 	display: grid;
 	place-items: center;
 	padding: var(--small-unit) 0;

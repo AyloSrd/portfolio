@@ -1,0 +1,5 @@
+footer {
+    padding: var(--large-unit);
+    text-align: center;
+    font-size: 0.9rem;
+}

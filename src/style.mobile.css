@@ -8,12 +8,9 @@
 		padding: var(--small-unit) 0 0;
 	}
 
-	nav > div.logo-container-nav {
-		padding-left: var(--small-unit);
-	}
-
 	nav > div#search-zone {
 		padding-right: var(--small-unit);
+		width: 250px;
 	}
 
 	nav > div#all-skills-zone h3 {
@@ -64,7 +61,7 @@
 	}
 
 	header {
-		padding: var(--standard-unit) var(--small-unit);
+		padding: var(--standard-unit) var(--small-unit) var(--large-unit);
 	}
 
 	header > section.title { 
@@ -75,5 +72,24 @@
 
 	main > section > button.scroll-btn {
 		display: none;
+	}
+
+	section#modal-container {
+		padding: var(--large-unit) var(--small-unit) var(--standard-unit);
+	}
+
+	section#modal-container::before {
+		content: 'x';
+		width: calc(var(--small-unit)*2);
+		height: calc(var(--small-unit)*2);
+		font-size: 1rem;
+		display: grid;
+		place-content: center;
+		position: absolute;
+		top: var(--standard-unit);
+		right: var(--small-unit);
+		color: white;
+		background-color: var(--secondary); 
+		border-radius: 50%;
 	}
 }

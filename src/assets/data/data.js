@@ -14,7 +14,7 @@ export const portfolio = [
 		  "alt": "portfolio logo"
 		},
 		"date": "2021",
-		"links": [],
+		"links": ['', 'https://github.com/AyloSrd/portfolio'],
 		"skills": ["creativity", "javascript", "vanilla", "github", "git", "css", "html"],
 		"location": "Lyon, France & Alghero, Italy",
 		"shortDescription": "The amazing portfolio web-app your are currently interacting with.",
@@ -29,7 +29,7 @@ export const portfolio = [
 		  "alt": "tinderize logo"
 		},
 		"date": "2021",
-		"links": [],
+		"links": ['https://tinderize-offline.vercel.app/', 'https://github.com/AyloSrd/tinderize-offline'],
 		"skills": ["face-api.js", "tensorflow.js", "svelte", "vercel", "git", "github"],
 		"location": "Lyon, France & Alghero, Italy",
 		"shortDescription": "A.I.-powered face-blurrer.",
