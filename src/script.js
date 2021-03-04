@@ -84,6 +84,7 @@ SearchForm.addEventListener('search', e => handleOnSearch(e, skills, correspondi
 		EducationScroll.innerHTML = filteredArticles.education ? ArticlesContainer(filteredArticles.education) : ''
 		SearchInput.value = ''
 		SearchInput.dispatchEvent(new Event('input'))
+		PortfolioScroll.scrollIntoView()
 	}
 }))
 
@@ -102,6 +103,7 @@ AllSkillsZone.addEventListener('click', e => {
 	PortfolioScroll.innerHTML = filteredArticles.portfolio ? ArticlesContainer(filteredArticles.portfolio) : ''
 	WorkScroll.innerHTML = filteredArticles.work ? ArticlesContainer(filteredArticles.work) : ''
 	EducationScroll.innerHTML = filteredArticles.education ? ArticlesContainer(filteredArticles.education) : ''
+	PortfolioScroll.scrollIntoView()
 })
 
 FoundSkillsZone.addEventListener('click', e => {
@@ -115,6 +117,7 @@ FoundSkillsZone.addEventListener('click', e => {
 		PortfolioScroll.innerHTML = filteredArticles.portfolio ? ArticlesContainer(filteredArticles.portfolio) : ''
 		WorkScroll.innerHTML = filteredArticles.work ? ArticlesContainer(filteredArticles.work) : ''
 		EducationScroll.innerHTML = filteredArticles.education ? ArticlesContainer(filteredArticles.education) : ''
+		PortfolioScroll.scrollIntoView()
 	}
 })
 
