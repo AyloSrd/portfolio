@@ -19,7 +19,7 @@ export const portfolio = [
 		"location": "Lyon, France & Alghero, Italy",
 		"shortDescription": "The amazing portfolio web-app your are currently interacting with.",
 		"role": null,
-		"description": "Portfolio/resume website written in vanilla js and html/css.\nThe code was written with the user's problems in mind; in particular, it allows them to go directly to the project/experience that matches the subset of skills they are looking for.\nI tried to give a 'reactish' feeling by creating template components. The events are delegated to the script.js."
+		"description": "Portfolio/resume website written in vanilla js and html/css.<br>The code was written with the user's problems in mind; in particular, it allows them to go directly to the project/experience that matches the subset of skills they are looking for.<br>I tried to give a 'reactish' feeling by creating template components. The events are delegated to the script.js."
 	},
 	{
 		"title": "Tinderize-offline",
@@ -34,7 +34,7 @@ export const portfolio = [
 		"location": "Lyon, France & Alghero, Italy",
 		"shortDescription": "A.I.-powered face-blurrer.",
 		"role": null,
-		"description": "The only acceptable pictures of you for Tinder include you way better-looking friends?\nWorry no more : Tinderize uses the latest image recognitio, technologies to recognize and blur their faces.\nRuns on Svelte and face-api.js, which uses tensorflow.js under the hood. The reason why the A.I. stuff happens in the front is that I am planning to turn it in PWA working offline (hence its name)."
+		"description": "The only acceptable pictures of you for Tinder include you way better-looking friends?<br>Worry no more : Tinderize uses the latest image recognitio, technologies to recognize and blur their faces.<br>Runs on Svelte and face-api.js, which uses tensorflow.js under the hood. The reason why the A.I. stuff happens in the front is that I am planning to turn it in PWA working offline (hence its name)."
 	},
 	{
 		"title": "Alexa Rank API Simplifier",
@@ -44,12 +44,12 @@ export const portfolio = [
 		  "alt": "alexa-rank api logo"
 		},
 		"date": "2021",
-		"links": [],
+		"links": ["https://alexa-api-simplifier.herokuapp.com/", "https://github.com/AyloSrd/alexaApiSimplifier"],
 		"skills": ["express.js", "node.js", "heroku", "git", "github"],
 		"location": "Paris, France",
 		"shortDescription": "API to enable GET requests to AWIS-Alexa-rank from Salesforce Mulesoft API.",
 		"role": null,
-		"description": "Covered several roles for the subsidiaries H3Zoom.AI (Artificial Intelligence for anomalies detection on infrastructures) and HES Energy Systems (Hydrogen Fuel Cells)."
+		"description": "It's no easy thing to send get requests to AWIS-Alexa-rank from Salesforce, since you are supposed to include your token in the GET-request's header.<br>Alexa Rank API Simplifier acts as a middleware, extracting the info fro the get request, re-formating it including an header, and parse the xml response sending only the ranking back to your Salesforce component.<br>This project is an MVP for a client in the e-commerce sector."
 	},
 	{
 		"title": "Cöde",
@@ -59,12 +59,12 @@ export const portfolio = [
 		  "alt": "cöde logo"
 		},
 		"date": "2020",
-		"links": [],
+		"links": ["https://cooode.herokuapp.com/", "https://github.com/AyloSrd/clientzumba", "https://github.com/AyloSrd/serverzumba"],
 		"skills": ["react", "css", "html", "express.js", "creativity", "github", "heroku", "git", "javascript", "socket.io", "mongoDB", "noSQL", "webRTC", "codemirror"],
 		"location": "Paris, France",
 		"shortDescription": "Interactive coding lessons platform",
 		"role": null,
-		"description": "Covered several roles for the subsidiaries H3Zoom.AI (Artificial Intelligence for anomalies detection on infrastructures) and HES Energy Systems (Hydrogen Fuel Cells)."
+		"description": "Cöde, is a learning platform that provides a connected integrated development environment for teachers and students for live coding lessons. Additionally, it can be used to stream coding sessions.<br>Each lesson is assigned to a specific socket.io room and has, therefore, its own chat. The text editors and browsers in each room are connected & synchronized. Students can pause at any time the code stream from the teacher and play and experiment with it at their own pace and convenience. Specific parts of the lessons can be saved at any time.<br>WebRTC technology allows the classroom to communicate via video.<br>The front-end part of Cöde is built with the following technologies: create-react-app, axios, codemirror, react-codemirror2 peerjs, react-router, socket.io-client"
 	},
 	{
 		"title": "NASA Mission Control",
@@ -94,7 +94,7 @@ export const portfolio = [
 		"location": "Paris, France",
 		"shortDescription": "Redux-based app that sorts Star Wars episodes.",
 		"role": null,
-		"description": "Having trouble with ordering the Star Wars first and second trilogy by date of release or episode number? redux-starwrs does it for you!\nSmall app to test redux, makes use of redux-thunk to deal with API calls (fetch)"
+		"description": "Having trouble with ordering the Star Wars first and second trilogy by date of release or episode number? redux-starwrs does it for you!<br>Small app to test redux, makes use of redux-thunk to deal with API calls (fetch)"
 	},		
 	{
 		"title": "neofinance-c",
@@ -104,12 +104,12 @@ export const portfolio = [
 		  "alt": "neofinance-c"
 		},
 		"date": "2020",
-		"links": [],
+		"links": ["https://github.com/AyloSrd/neofinance-c"],
 		"skills": ["node", "nodemailer", "puppeteer", "business-acumen", "javascript"],
 		"location": "Paris, France",
 		"shortDescription": "Script automating financial opportunities research.",
 		"role": null,
-		"description": "Automating search for financial opportunities on a p2p lending platform, with email notification.\n	The bot checks every 5 minutes the investments page and identifies new investment opportunities, based on fixed creteria, before they are gone. The user, Mr. C., is notified via email any time a new opportunity arises, with a 5 minutes max delay.\nStack: -node -puppeteer -nodemailer -cron."
+		"description": "Automating search for financial opportunities on a p2p lending platform, with email notification.<br>The bot checks every 5 minutes the investments page and identifies new investment opportunities, based on fixed creteria, before the lending reqeuest is fullfilled. The user, Mr. C., is notified via email any time a new opportunity arises, with a 5 minutes max delay."
 	},
 	{
 		"title": "È - maiuscola, accentata",
@@ -119,12 +119,12 @@ export const portfolio = [
 		  "alt": "È accentata maiuscola"
 		},
 		"date": "2020",
-		"links": [],
+		"links": ["https://chrome.google.com/webstore/detail/%C3%A8-maiuscola-accentata/bmegikflmmkgpgfjnmelombinkcjcpgi?hl=it&authuser=1"],
 		"skills": ["chrome-store", "javascript", "chrome-extensions", "business-acumen", "seo"],
 		"location": "Paris, France & Singapore",
 		"shortDescription": "Extension to simplify the life of Italian QWERTY keyboards users",
 		"role": null,
-		"description": "Covered several roles for the subsidiaries H3Zoom.AI (Artificial Intelligence for anomalies detection on infrastructures) and HES Energy Systems (Hydrogen Fuel Cells)."
+		"description": "We Italians have been blessed with many gifts: world-best cuisine, the Renaissance, a charming voice and the ability to speak with our hands. What we haven't blessed with however, is a QWERTY keyboard that allows us to type an 'È', Capital E with grave accent.In Italian, it is very usual to start a sentence with an 'È' (is), and we often resort to E', which is a grammatical horror.<br>This Chrome Extension simply copies the aforementioned character in the clipboard, by clicking on it.<br>It currently ranks on Google's first page for keywords such us 'è maiuscola' or 'è maiuscola accentata', and has more than 1000 users.<br>It is pure vanilla js, and I am planning to pass from a Manifest V2 to a V3 soon."
 	}
 ]
 
