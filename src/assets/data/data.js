@@ -14,12 +14,12 @@ export const portfolio = [
 		  "alt": "portfolio logo"
 		},
 		"date": "2021",
-		"links": ['', 'https://github.com/AyloSrd/portfolio'],
+		"links": ['https://github.com/AyloSrd/portfolio', 'https://github.com/AyloSrd/portfolio'],
 		"skills": ["creativity", "javascript", "vanilla", "github", "git", "css", "html"],
 		"location": "Lyon, France & Alghero, Italy",
 		"shortDescription": "The amazing portfolio web-app your are currently interacting with.",
 		"role": null,
-		"description": "Covered several roles for the subsidiaries H3Zoom.AI (Artificial Intelligence for anomalies detection on infrastructures) and HES Energy Systems (Hydrogen Fuel Cells)."
+		"description": "Portfolio/resume website written in vanilla js and html/css.\nThe code was written with the user's problems in mind; in particular, it allows them to go directly to the project/experience that matches the subset of skills they are looking for.\nI tried to give a 'reactish' feeling by creating template components. The events are delegated to the script.js."
 	},
 	{
 		"title": "Tinderize-offline",
@@ -30,11 +30,11 @@ export const portfolio = [
 		},
 		"date": "2021",
 		"links": ['https://tinderize-offline.vercel.app/', 'https://github.com/AyloSrd/tinderize-offline'],
-		"skills": ["face-api.js", "tensorflow.js", "svelte", "vercel", "git", "github"],
+		"skills": ["face-api.js", "tensorflow.js", "svelte", "vercel", "git", "github", "javascript"],
 		"location": "Lyon, France & Alghero, Italy",
 		"shortDescription": "A.I.-powered face-blurrer.",
 		"role": null,
-		"description": "Covered several roles for the subsidiaries H3Zoom.AI (Artificial Intelligence for anomalies detection on infrastructures) and HES Energy Systems (Hydrogen Fuel Cells)."
+		"description": "The only acceptable pictures of you for Tinder include you way better-looking friends?\nWorry no more : Tinderize uses the latest image recognitio, technologies to recognize and blur their faces.\nRuns on Svelte and face-api.js, which uses tensorflow.js under the hood. The reason why the A.I. stuff happens in the front is that I am planning to turn it in PWA working offline (hence its name)."
 	},
 	{
 		"title": "Alexa Rank API Simplifier",
