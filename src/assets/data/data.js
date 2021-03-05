@@ -1,7 +1,7 @@
 export const skills = {
 	categories: ['Computer Skills', 'Business Skills', 'Soft Skills'],
 	computer: ['aws', 'chrome-extensions', 'chrome-store', 'codemirror', 'css', 'deno', 'docker', 'express.js', 'face-api.js', 'git', 'github', 'heroku', 'html', 'javascript', 'mongoDB', 'node.js', 'nodemailer', 'noSQL', 'peerjs', 'puppeteer', 'react', 'redux', 'socket.io', 'svelte', 'tensorflow.js', 'vanilla', 'vercel', 'webRTC'],
-	business: ['business-acumen', 'seo', 'sales', 'marketing', 'Google Ads', 'Google Analytics'],
+	business: ['business-acumen', 'seo', 'sales', 'marketing', 'contract-management', 'criminal-law', 'international-law', 'private-law', 'Google Ads', 'Google Analytics'],
 	soft: ['teamworking', 'negotiation', 'storytelling', 'sleight-of-hand', 'stubborness', 'creativity', 'stress management', 'adaptability', 'problem-solving']
 }
 
@@ -19,11 +19,11 @@ export const portfolio = [
 		"location": "Lyon, France & Alghero, Italy",
 		"shortDescription": "The amazing portfolio web-app your are currently interacting with.",
 		"role": null,
-		"description": "Portfolio/resume website written in vanilla js and html/css.<br>The code was written with the user's problems in mind; in particular, it allows them to go directly to the project/experience that matches the subset of skills they are looking for.<br>I tried to give a 'reactish' feeling by creating template components. The events are delegated to the script.js."
+		"description": "Portfolio/resume website written in vanilla js and html/css.<br>The code was written with the user's problems in mind; in particular, it allows them to go directly to the project/experience that matches the subset of skills they are looking for.<br>I tried to give a 'reactish' feeling by creating template components (similar to one of my other projects, the game '<a href='https://aylosrd.github.io/scopa/'>Scopa</a>)'. The events are delegated to the script.js."
 	},
 	{
 		"title": "Tinderize-offline",
-		"id": "portfolio-0.012172288259092445-this",
+		"id": "portfolio-0.03727733622755158-tinderize",
 		"image": {
 		  "url": "tinderize.jpg",
 		  "alt": "tinderize logo"
@@ -38,7 +38,7 @@ export const portfolio = [
 	},
 	{
 		"title": "Alexa Rank API Simplifier",
-		"id": "portfolio-0.4541018031064097-this",
+		"id": "portfolio-0.643238350258925-alexa-rank",
 		"image": {
 		  "url": "alexa-rank-api.jpg",
 		  "alt": "alexa-rank api logo"
@@ -74,12 +74,12 @@ export const portfolio = [
 		  "alt": "SpaceX rocket"
 		},
 		"date": "2020",
-		"links": [],
+		"links": ['https://github.com/AyloSrd/NASA-Project'],
 		"skills": ["deno", "typescript", "html", "css", "javascript", "aws", "docker"],
 		"location": "Paris, France & Singapore",
 		"shortDescription": "",
 		"role": null,
-		"description": "Covered several roles for the subsidiaries H3Zoom.AI (Artificial Intelligence for anomalies detection on infrastructures) and HES Energy Systems (Hydrogen Fuel Cells)."
+		"description": "Code-along exercise, based on <a href='https://www.udemy.com/course/deno-the-complete-guide-zero-to-mastery/'>ZTM Deno course</a>.<br>It uses Deno, the new JavaScript back-end framework, TypeScritp, adn follows Deno's best practices.<br>Runs in a docker container on AWS.<br>This is not an official site and is not affiliated with NASA or SpaceX in any way. For educational purposes only."
 	},
 	{
 		"title": "redux-starwars",
@@ -89,12 +89,12 @@ export const portfolio = [
 		  "alt": "SpaceX rocket"
 		},
 		"date": "2020",
-		"links": [],
+		"links": ['https://github.com/AyloSrd/redux-starwars'],
 		"skills": ["html", "css", "javascript", "react", "redux"],
 		"location": "Paris, France",
 		"shortDescription": "Redux-based app that sorts Star Wars episodes.",
 		"role": null,
-		"description": "Having trouble with ordering the Star Wars first and second trilogy by date of release or episode number? redux-starwrs does it for you!<br>Small app to test redux, makes use of redux-thunk to deal with API calls (fetch)"
+		"description": "Having trouble with ordering the Star Wars first and second trilogy by date of release or episode number? redux-starwrs does it for you!<br>Small app to test redux, makes use of redux-thunk to deal with API calls (fetch)."
 	},		
 	{
 		"title": "neofinance-c",
@@ -112,8 +112,23 @@ export const portfolio = [
 		"description": "Automating search for financial opportunities on a p2p lending platform, with email notification.<br>The bot checks every 5 minutes the investments page and identifies new investment opportunities, based on fixed creteria, before the lending reqeuest is fullfilled. The user, Mr. C., is notified via email any time a new opportunity arises, with a 5 minutes max delay."
 	},
 	{
+		"title": "Scopa!",
+		"id": "portfolio-0.3267961201595331-scopa!",
+		"image": {
+		  "url": "scopa.jpg",
+		  "alt": "scopa"
+		},
+		"date": "2020",
+		"links": ["https://aylosrd.github.io/scopa/", "https://github.com/AyloSrd/scopa"],
+		"skills": ["html", "css",  "git", "github", "javascript", "vanilla"],
+		"location": "Paris, France",
+		"shortDescription": "Very cool hyper-casual game",
+		"role": null,
+		"description": "Mental calculation training. Hyper-casual game based on Italian card game 'Scopa'.<br>The user has 10 seconds to chose the number/s that sum up to the requested amount.<br>Built with vanilla js in a 'reactish' way, it will in the near future become a PWA."
+	},
+	{
 		"title": "È - maiuscola, accentata",
-		"id": "portfolio-0.26374041255537-H3 Dynamics",
+		"id": "portfolio-0.3576908747001428-È - maiuscola",
 		"image": {
 		  "url": "è-accentata-maiuscola.jpg",
 		  "alt": "È accentata maiuscola"
@@ -130,15 +145,51 @@ export const portfolio = [
 
 export const work = [
 	{
+		"title": "Aÿlo Srd",
+		"id": "work-0.9524332065933723-aylo",
+		"image": {
+		  "url": "aylo.jpg",
+		  "alt": "Aÿlo Srd"
+		},
+		"date": "2020",
+		"links": ['https://aylosrd.github.io/portfolio/', 'https://github.com/AyloSrd?tab=repositories'],
+		"skills": ['aws', 'chrome-extensions', 'chrome-store', 'codemirror', 'css', 'deno', 'docker', 'express.js', 'face-api.js', 'git', 'github', 'heroku', 'html', 'javascript', 'mongoDB', 'node.js', 'nodemailer', 'noSQL', 'peerjs', 'puppeteer', 'react', 'redux', 'socket.io', 'svelte', 'tensorflow.js', 'vanilla', 'vercel', 'webRTC', 'business-acumen', 'seo', 'stubborness', 'creativity', 'stress management', 'adaptability', 'problem-solving'],
+		"location": "Paris, France",
+		"shortDescription": "Open-source, personal and professional web-projects",
+		"role": "Freelance Full-stack Developer",
+		"tasks": [
+			"Envisioned, designed, coded and deployed several full-stack, back-end and front-end projects for personal use or professional clients. Most of the projects are open-source.",
+		  	"Explored the most recent technologies, libraries and frameworks, such as Svelte and Deno."
+		]
+	},
+	{
+		"title": "Predictice",
+		"id": "work-0.9619077781293668-Predictice",
+		"image": {
+		  "url": "predictice.jpg",
+		  "alt": "predictice"
+		},
+		"date": "2020",
+		"links": ['https://predictice.com/'],
+		"skills": ['sales','puppeteer', 'negotiation', 'stubborness', 'stress management', 'adaptability', 'problem-solving'],
+		"location": "Paris, France",
+		"shortDescription": "LegalTech/Predictive Justice/AI/Saas start-up",
+		"role": "Salesperson",
+		"tasks": [
+			"Managed the entire sales process end-to-end within Paris’ XVI Arrondissement",
+		  	"Scraped Legal500 website to get top tier law firms info and ranked by region and specialisation"
+		]
+	},
+	{
 	  "title": "H3 Dynamics",
 	  "id": "work-0.26374097941255537-H3 Dynamics",
 	  "image": {
 		"url": "h3d.jpg",
 		"alt": "h3d"
 	  },
-	  "date": "2010",
-	  "links": [],
-	  "skills": ["test"],
+	  "date": "2017 to 2020",
+	  "links": ["https://www.h3dynamics.com/", "https://www.hes.sg/", "https://www.h3zoom.ai/"],
+	  "skills": ["sales", 'negotiation', 'stubborness', 'stress management', 'adaptability', 'problem-solving', 'storytelling', 'sleight-of-hand', 'contract-management'],
 	  "location": "Paris, France & Singapore",
 	  "shortDescription": " Drones, Artificial Intelligence and Cleantech",
 	  "role": "Sales Executive & Marketing Lead",
@@ -165,11 +216,11 @@ export const work = [
 		"url": "b&bvillarosa.jpg",
 		"alt": "b&bvillarosa"
 	  },
-	  "date": "2010",
-	  "links": [],
-	  "skills": ["test"],
+	  "date": "2010 to present",
+	  "links": ['https://www.airbnb.it/rooms/2992833'],
+	  "skills": ['business-acumen', 'marketing', 'teamworking', 'storytelling'],
 	  "location": "Alghero, Italy",
-	  "shortDescription": " Typical Sardinian Cottage",
+	  "shortDescription": "Typical Sardinian Cottage",
 	  "role": "Co-owner & Manager(Seasonal)",
 	  "tasks": [
 		"Achieved 169% turnover growth over the last 5 years, despite negative market trends.",
@@ -183,11 +234,10 @@ export const work = [
 		"url": "avvcarboni.jpg",
 		"alt": "avvcarboni"
 	  },
-	  "date": "2010",
-	  "links": [],
-	  "skills": ["test"],
+	  "date": "2016",
+	  "skills": ['contract-management', 'criminal-law', 'private-law'],
 	  "location": "Alghero, Italy",
-	  "shortDescription": " Criminal Law and Civil Law",
+	  "shortDescription": "Criminal Law and Civil Law",
 	  "role": "Trainee Lawyer",
 	  "tasks": [
 		"Drafted contracts, legal briefs and opinions, and took part in the development of legal strategies for important criminal and commercial cases."
@@ -200,11 +250,11 @@ export const work = [
 		"url": "aske.jpg",
 		"alt": "aske"
 	  },
-	  "date": "2010",
-	  "links": [],
-	  "skills": ["test"],
+	  "date": "2015",
+	  "links": ['http://aske-avocats.fr/'],
+	  "skills": ['contract-management', 'criminal-law', 'international-law', 'private-law'],
 	  "location": "Nantes, France",
-	  "shortDescription": " International Business Law",
+	  "shortDescription": "International Business Law",
 	  "role": "Paralegal",
 	  "tasks": [
 		"Conducted legal researches preparing for national and cross border disputes and employment litigations.",
@@ -221,9 +271,9 @@ export const education = [
 		"url": "emlyon.jpg",
 		"alt": "emlyon"
 	  },
-	  "date": "2010",
-	  "links": [],
-	  "skills": ["test"],
+	  "date": "2016",
+	  "links": ["www.em-lyon.com"],
+	  "skills": ['sales', 'marketing','sales', 'marketing','teamworking', 'creativity', 'adaptability', 'problem-solving'],
 	  "location": "Lyon, France",
 	  "shortDescription": "Specialised Master in International Business Strategy for Lawyers.",
 	  "tasks": [
@@ -237,9 +287,9 @@ export const education = [
 		"url": "ecnu.jpg",
 		"alt": "ecnu"
 	  },
-	  "date": "2010",
-	  "links": [],
-	  "skills": ["test"],
+	  "date": "2017",
+	  "links": ["http://english.ecnu.edu.cn/"],
+	  "skills": ['marketing', 'teamworking', 'negotiation', 'stress management', 'adaptability', 'problem-solving'],
 	  "location": "Shanghai, China",
 	  "shortDescription": "Campus Abroad «Doing Business in China».",
 	  "tasks": [
@@ -253,9 +303,9 @@ export const education = [
 		"url": "sassari.jpg",
 		"alt": "sassari"
 	  },
-	  "date": "2010",
-	  "links": [],
-	  "skills": ["test"],
+	  "date": "2010 to 2015",
+	  "links": ["https://www.uniss.it/"],
+	  "skills": ['criminal-law', 'international-law', 'private-law'],
 	  "location": "Sassari, Italy",
 	  "shortDescription": "Law Master Degree – 110/110 cum laude.",
 	  "tasks": [
@@ -270,9 +320,9 @@ export const education = [
 		"url": "poitiers.jpg",
 		"alt": "poitiers"
 	  },
-	  "date": "2010",
-	  "links": [],
-	  "skills": ["test"],
+	  "date": "2012",
+	  "links": ['https://www.univ-poitiers.fr/'],
+	  "skills": ["international-law", 'private-law'],
 	  "location": "Poitiers, France",
 	  "shortDescription": "Erasmus Year Abroad.",
 	  "tasks": [
@@ -286,14 +336,51 @@ export const education = [
 		"url": "liceo.jpg",
 		"alt": "liceo"
 	  },
-	  "date": "2010",
-	  "links": [],
-	  "skills": ["test"],
+	  "date": "2005 to 2010",
+	  "links": ["https://www.liceoalghero.edu.it/"],
+	  "skills": ['teamworking', 'creativity', 'problem-solving'],
 	  "location": "Alghero, Italy",
-	  "shortDescription": "Graduation score: 100/100 – Class representative for 2 years.",
-	  "tasks": []
+	  "shortDescription": "Graduation score: 100/100 – Class representative",
+	  "tasks": [
+		  "Class representative for 2 years",
+		  "High School's Olympics of Mathematics Team Captain",
+		  "High School's Athletics Team"
+		]
 	}
   ]
+
+/*export const interests = [
+	{
+		"title": "Sleight of hand",
+		"id": "interests-0.38882941259712034-sleight of hand",
+		"image": {
+		  "url": "magic.jpg",
+		  "alt": "magic"
+		},
+		"skills": ["test"],
+		"shortDescription": "Close-up magic, cardistry, coin magic.",
+	  },
+	  {
+		"title": "Tarantino Movie",
+		"id": "interests-0.38882941259712034-sleight of hand",
+		"image": {
+		  "url": "uma.jpg",
+		  "alt": "Uma Thurman"
+		},
+		"skills": ["test"],
+		"shortDescription": "My favorite film is KIll Bill.",
+	  },
+	  {
+		"title": "Science Fiction",
+		"id": "interests-0.38882941259712034-sleight of hand",
+		"image": {
+		  "url": "uma.jpg",
+		  "alt": "Uma Thurman"
+		},
+		"skills": ["test"],
+		"shortDescription": "Mainly Asimov. < href='https://templatetraining.princeton.edu/sites/training/files/the_last_question_-_issac_asimov.pdf'>Read this onew/a>",
+	  },
+]*/
 
 /* GET EDUCATION FROM WEBSITE
 

@@ -2,6 +2,7 @@ import {
 	portfolio,
 	work,
 	education,
+	// interests,
 	skills
 } from './assets/data/data.js'
 import { 
@@ -50,6 +51,7 @@ const ModalContainer = document.getElementById('modal-container')
 const PortfolioScroll = document.getElementById('portfolio-scroll')
 const WorkScroll = document.getElementById('work-scroll')
 const EducationScroll = document.getElementById('education-scroll')
+// const InterestsScroll = document.getElementById('interests-scroll')
 const AllSkillsZone = document.getElementById('all-skills-zone')
 const FoundSkillsZone = document.getElementById('found-skills-zone')
 const ToggleAllSkillsBtn = document.getElementById('toggle-all-skills-btn')
