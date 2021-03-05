@@ -77,7 +77,7 @@ export const portfolio = [
 		"links": ['https://github.com/AyloSrd/NASA-Project'],
 		"skills": ["deno", "typescript", "html", "css", "javascript", "aws", "docker"],
 		"location": "Paris, France & Singapore",
-		"shortDescription": "",
+		"shortDescription": "Deno/Typescript full-stack project",
 		"role": null,
 		"description": "Code-along exercise, based on <a href='https://www.udemy.com/course/deno-the-complete-guide-zero-to-mastery/'>ZTM Deno course</a>.<br>It uses Deno, the new JavaScript back-end framework, TypeScritp, adn follows Deno's best practices.<br>Runs in a docker container on AWS.<br>This is not an official site and is not affiliated with NASA or SpaceX in any way. For educational purposes only."
 	},
