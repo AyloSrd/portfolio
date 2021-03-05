@@ -85,8 +85,8 @@ export const portfolio = [
 		"title": "redux-starwars",
 		"id": "portfolio-0.7701651095791733-redux starwars",
 		"image": {
-		  "url": "spacex.jpg",
-		  "alt": "SpaceX rocket"
+		  "url": "starwars.jpg",
+		  "alt": "grogu"
 		},
 		"date": "2020",
 		"links": ['https://github.com/AyloSrd/redux-starwars'],
