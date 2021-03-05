@@ -213,7 +213,7 @@ export const work = [
 	  "title": "B&B Villa Rosa",
 	  "id": "work-0.970450827304862-B&B Villa Rosa",
 	  "image": {
-		"url": "b&bvillarosa.jpg",
+		"url": "b&bvillarosa.JPG",
 		"alt": "b&bvillarosa"
 	  },
 	  "date": "2010 to present",
@@ -231,7 +231,7 @@ export const work = [
 	  "title": "Stefano Carboni Law Firm",
 	  "id": "work-0.46033034389910243-Stefano Carboni Law Firm",
 	  "image": {
-		"url": "avvcarboni.jpg",
+		"url": "avvcarboni.JPG",
 		"alt": "avvcarboni"
 	  },
 	  "date": "2016",
