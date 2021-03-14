@@ -19,7 +19,7 @@ export const portfolio = [
 		"location": "Lyon, France & Alghero, Italy",
 		"shortDescription": "The amazing portfolio web-app your are currently interacting with.",
 		"role": null,
-		"description": "Portfolio/resume website written in vanilla js and html/css.<br>The code was written with the user's problems in mind; in particular, it allows them to go directly to the project/experience that matches the subset of skills they are looking for.<br>I tried to give a 'reactish' feeling by creating template components (similar to one of my other projects, the game '<a href='https://aylosrd.github.io/scopa/'>Scopa</a>)'. The events are delegated to the script.js."
+		"description": "Portfolio/resume website written in vanilla js and html/css.<br>The code was written with users' experience in mind; in particular, it allows users to go directly to the project/experience that matches the subset of skills they are looking for.<br>I tried to give a 'reactish' feeling by creating template components (similar to one of my other projects, the game '<a href='https://aylosrd.github.io/scopa/'>Scopa</a>)'. The events are delegated to the script.js."
 	},
 	{
 		"title": "Tinderize-offline",
@@ -34,7 +34,7 @@ export const portfolio = [
 		"location": "Lyon, France & Alghero, Italy",
 		"shortDescription": "A.I.-powered face-blurrer.",
 		"role": null,
-		"description": "The only acceptable pictures of you for Tinder include you way better-looking friends?<br>Worry no more : Tinderize uses the latest image recognitio, technologies to recognize and blur their faces.<br>Runs on Svelte and face-api.js, which uses tensorflow.js under the hood. The reason why the A.I. stuff happens in the front is that I am planning to turn it in PWA working offline (hence its name)."
+		"description": "The only acceptable pictures of you for Tinder include your way better-looking friends?<br>Worry no more : Tinderize uses the latest image recognition technologies to recognize and blur their faces.<br>Runs on Svelte and face-api.js, which uses tensorflow.js under the hood. The reason why the A.I. stuff happens in the front is that I am planning to turn it in PWA working offline (hence its name)."
 	},
 	{
 		"title": "Alexa Rank API Simplifier",
@@ -49,7 +49,7 @@ export const portfolio = [
 		"location": "Paris, France",
 		"shortDescription": "API to enable GET requests to AWIS-Alexa-rank from Salesforce Mulesoft API.",
 		"role": null,
-		"description": "It's no easy thing to send get requests to AWIS-Alexa-rank from Salesforce, since you are supposed to include your token in the GET-request's header.<br>Alexa Rank API Simplifier acts as a middleware, extracting the info fro the get request, re-formating it including an header, and parse the xml response sending only the ranking back to your Salesforce component.<br>This project is an MVP for a client in the e-commerce sector."
+		"description": "It's no easy thing to send get requests to AWIS-Alexa-rank from Salesforce, since you are supposed to include your token in the GET-request's header.<br>Alexa Rank API Simplifier acts as a middleware, extracting the info from the get request, re-formating it including an header, and parse the xml response sending only the ranking back to your Salesforce component.<br>This project is an MVP for a client in the e-commerce sector."
 	},
 	{
 		"title": "Cöde",
