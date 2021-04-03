@@ -1,6 +1,6 @@
 export const skills = {
 	categories: ['Computer Skills', 'Business Skills', 'Soft Skills'],
-	computer: ['aws', 'chrome-extensions', 'chrome-store', 'codemirror', 'css', 'deno', 'docker', 'express.js', 'face-api.js', 'git', 'github', 'heroku', 'html', 'javascript', 'mongoDB', 'node.js', 'nodemailer', 'noSQL', 'peerjs', 'puppeteer', 'react', 'redux', 'socket.io', 'svelte', 'tensorflow.js', 'vanilla', 'vercel', 'webRTC'],
+	computer: ['aws', 'chrome-extensions', 'chrome-store', 'codemirror', 'css', 'deno', 'docker', 'express.js', 'face-api.js', 'git', 'github', 'heroku', 'html', 'javascript', 'mongoDB', 'node.js', 'nodemailer', 'noSQL', 'peerjs', 'progressive-web-apps', 'puppeteer', 'pwa', 'react', 'redux', 'socket.io', 'svelte', 'tensorflow.js', 'vanilla', 'vercel', 'webRTC'],
 	business: ['business-acumen', 'seo', 'sales', 'marketing', 'contract-management', 'criminal-law', 'international-law', 'private-law', 'Google Ads', 'Google Analytics'],
 	soft: ['teamworking', 'negotiation', 'storytelling', 'sleight-of-hand', 'stubborness', 'creativity', 'stress management', 'adaptability', 'problem-solving']
 }
@@ -30,11 +30,11 @@ export const portfolio = [
 		},
 		"date": "2021",
 		"links": ['https://tinderize-offline.vercel.app/', 'https://github.com/AyloSrd/tinderize-offline'],
-		"skills": ["face-api.js", "tensorflow.js", "svelte", "vercel", "git", "github", "javascript"],
+		"skills": ["face-api.js", "tensorflow.js", "svelte", "progressive-web-apps", "pwa", "vercel", "git", "github", "javascript"],
 		"location": "Lyon, France & Alghero, Italy",
 		"shortDescription": "A.I.-powered face-blurrer.",
 		"role": null,
-		"description": "The only acceptable pictures of you for Tinder include your way better-looking friends?<br>Worry no more : Tinderize uses the latest image recognition technologies to recognize and blur their faces.<br>Runs on Svelte and face-api.js, which uses tensorflow.js under the hood. The reason why the A.I. stuff happens in the front is that I am planning to turn it in PWA working offline (hence its name)."
+		"description": "The only acceptable pictures of you for Tinder include your way better-looking friends?<br>Worry no more : Tinderize uses the latest image recognition technologies to recognize and blur their faces.<br>Runs on Svelte and face-api.js, which uses tensorflow.js under the hood. The reason why the A.I. stuff happens in the front is that <s>I am planning to turn it in PWA working offline</s> it is a PWA working offline (hence its name)."
 	},
 	{
 		"title": "Alexa Rank API Simplifier",
