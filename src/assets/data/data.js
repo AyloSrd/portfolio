@@ -139,7 +139,7 @@ export const portfolio = [
 		"location": "Paris, France & Singapore",
 		"shortDescription": "Extension to simplify the life of Italian QWERTY keyboards users",
 		"role": null,
-		"description": "We Italians have been blessed with many gifts: world-best cuisine, the Renaissance, a charming voice and the ability to speak with our hands. What we haven't blessed with however, is a QWERTY keyboard that allows us to type an 'È', Capital E with grave accent.In Italian, it is very usual to start a sentence with an 'È' (is), and we often resort to E', which is a grammatical horror.<br>This Chrome Extension simply copies the aforementioned character in the clipboard, by clicking on it.<br>It currently ranks on Google's first page for keywords such us 'è maiuscola' or 'è maiuscola accentata', and has more than 1000 users.<br>It is pure vanilla js, and I am planning to pass from a Manifest V2 to a V3 soon."
+		"description": "We Italians have been blessed with many gifts: world-best cuisine, the Renaissance, a charming voice and the ability to speak with our hands. What we haven't blessed with however, is a QWERTY keyboard that allows us to type an 'È', Capital E with grave accent.In Italian, it is very usual to start a sentence with an 'È' (is), and we often resort to E', which is a grammatical horror.<br>This Chrome Extension simply copies the aforementioned character in the clipboard, by clicking on it.<br>It currently ranks on Google's first page for keywords such us 'è maiuscola' or 'è maiuscola accentata', and has more than 5000 users.<br>It is pure vanilla js, and I am planning to pass from a Manifest V2 to a V3 soon."
 	}
 ]
 
