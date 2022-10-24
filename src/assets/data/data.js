@@ -44,7 +44,6 @@ export const portfolio = [
 		  "alt": "alexa-rank api logo"
 		},
 		"date": "2021",
-		"links": ["https://alexa-api-simplifier.herokuapp.com/", "https://github.com/AyloSrd/alexaApiSimplifier"],
 		"skills": ["express.js", "node.js", "heroku", "git", "github"],
 		"location": "Paris, France",
 		"shortDescription": "API to enable GET requests to AWIS-Alexa-rank from Salesforce Mulesoft API.",
@@ -59,7 +58,6 @@ export const portfolio = [
 		  "alt": "cöde logo"
 		},
 		"date": "2020",
-		"links": ["https://cooode.herokuapp.com/", "https://github.com/AyloSrd/clientzumba", "https://github.com/AyloSrd/serverzumba"],
 		"skills": ["react", "css", "html", "express.js", "creativity", "github", "heroku", "git", "javascript", "socket.io", "mongoDB", "noSQL", "webRTC", "codemirror"],
 		"location": "Paris, France",
 		"shortDescription": "Interactive coding lessons platform",
@@ -104,7 +102,6 @@ export const portfolio = [
 		  "alt": "neofinance-c"
 		},
 		"date": "2020",
-		"links": ["https://github.com/AyloSrd/neofinance-c"],
 		"skills": ["node", "nodemailer", "puppeteer", "business-acumen", "javascript"],
 		"location": "Paris, France",
 		"shortDescription": "Script automating financial opportunities research.",
